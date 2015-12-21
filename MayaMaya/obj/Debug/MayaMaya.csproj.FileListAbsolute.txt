@@ -1,2 +1,10 @@
 C:\Users\lesli\Documents\InHolland\Blok 1.4\Project\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\bin\Debug\MayaMaya.pdb
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csprojResolveAssemblyReference.cache
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Inlogscherm.resources
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Properties.Resources.resources
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csproj.GenerateResource.Cache
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
