@@ -50,7 +50,7 @@
             // 
             this.Txt_Ww.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Ww.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Ww.Location = new System.Drawing.Point(281, 434);
+            this.Txt_Ww.Location = new System.Drawing.Point(285, 431);
             this.Txt_Ww.Name = "Txt_Ww";
             this.Txt_Ww.Size = new System.Drawing.Size(198, 26);
             this.Txt_Ww.TabIndex = 23;
@@ -60,7 +60,7 @@
             // 
             this.Txt_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Login.Location = new System.Drawing.Point(281, 379);
+            this.Txt_Login.Location = new System.Drawing.Point(285, 376);
             this.Txt_Login.Name = "Txt_Login";
             this.Txt_Login.Size = new System.Drawing.Size(198, 26);
             this.Txt_Login.TabIndex = 22;
@@ -71,7 +71,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(14, 45);
+            this.button3.Location = new System.Drawing.Point(14, 27);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 59);
             this.button3.TabIndex = 21;
@@ -84,7 +84,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(305, 402);
+            this.label5.Location = new System.Drawing.Point(309, 399);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 29);
             this.label5.TabIndex = 20;
@@ -96,7 +96,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(340, 347);
+            this.label4.Location = new System.Drawing.Point(344, 344);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 29);
             this.label4.TabIndex = 19;
@@ -145,7 +145,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 895);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 903);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,9 +157,9 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-1, 884);
+            this.button2.Location = new System.Drawing.Point(-1, 895);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(754, 106);
+            this.button2.Size = new System.Drawing.Size(754, 95);
             this.button2.TabIndex = 13;
             this.button2.TabStop = false;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -175,7 +175,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(-1, -2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(754, 106);
+            this.button1.Size = new System.Drawing.Size(754, 88);
             this.button1.TabIndex = 12;
             this.button1.TabStop = false;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -189,7 +189,7 @@
             this.Btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Login.Location = new System.Drawing.Point(328, 470);
+            this.Btn_Login.Location = new System.Drawing.Point(332, 467);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.Size = new System.Drawing.Size(100, 40);
             this.Btn_Login.TabIndex = 24;
@@ -203,7 +203,7 @@
             this.Btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Help.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Help.Location = new System.Drawing.Point(692, 19);
+            this.Btn_Help.Location = new System.Drawing.Point(694, 12);
             this.Btn_Help.Name = "Btn_Help";
             this.Btn_Help.Size = new System.Drawing.Size(48, 67);
             this.Btn_Help.TabIndex = 25;

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bestelling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bestelling.Designer.cs">
+      <DependentUpon>Bestelling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bestelling_Drinken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bestelling_Drinken.Designer.cs">
+      <DependentUpon>Bestelling_Drinken.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inlogscherm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bestelling.resx">
+      <DependentUpon>Bestelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bestelling_Drinken.resx">
+      <DependentUpon>Bestelling_Drinken.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inlogscherm.resx">
       <DependentUpon>Inlogscherm.cs</DependentUpon>
     </EmbeddedResource>
