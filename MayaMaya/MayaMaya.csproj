@@ -58,12 +58,19 @@
     <Compile Include="Bestelling_Drinken.Designer.cs">
       <DependentUpon>Bestelling_Drinken.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gereed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gereed.Designer.cs">
+      <DependentUpon>Gereed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inlogscherm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inlogscherm.Designer.cs">
       <DependentUpon>Inlogscherm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methodes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bestelling.resx">
@@ -71,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bestelling_Drinken.resx">
       <DependentUpon>Bestelling_Drinken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gereed.resx">
+      <DependentUpon>Gereed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inlogscherm.resx">
       <DependentUpon>Inlogscherm.cs</DependentUpon>

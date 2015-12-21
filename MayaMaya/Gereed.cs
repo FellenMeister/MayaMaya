@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Bestelling : Form
+    public partial class Gereed : Form
     {
-        public Bestelling()
+        public Gereed()
         {
             InitializeComponent();
         }

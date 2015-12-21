@@ -58,7 +58,7 @@
             this.Btn_Plaats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Plaats.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Plaats.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Plaats.Location = new System.Drawing.Point(474, 787);
+            this.Btn_Plaats.Location = new System.Drawing.Point(474, 786);
             this.Btn_Plaats.Name = "Btn_Plaats";
             this.Btn_Plaats.Size = new System.Drawing.Size(164, 40);
             this.Btn_Plaats.TabIndex = 53;
@@ -68,7 +68,7 @@
             // List_Bestelling
             // 
             this.List_Bestelling.FormattingEnabled = true;
-            this.List_Bestelling.Location = new System.Drawing.Point(409, 277);
+            this.List_Bestelling.Location = new System.Drawing.Point(409, 276);
             this.List_Bestelling.Name = "List_Bestelling";
             this.List_Bestelling.Size = new System.Drawing.Size(309, 472);
             this.List_Bestelling.TabIndex = 52;
@@ -76,7 +76,7 @@
             // List_Kaart
             // 
             this.List_Kaart.FormattingEnabled = true;
-            this.List_Kaart.Location = new System.Drawing.Point(50, 277);
+            this.List_Kaart.Location = new System.Drawing.Point(50, 276);
             this.List_Kaart.Name = "List_Kaart";
             this.List_Kaart.Size = new System.Drawing.Size(309, 550);
             this.List_Kaart.TabIndex = 51;
@@ -88,7 +88,7 @@
             this.Btn_Drinken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Drinken.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Drinken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Drinken.Location = new System.Drawing.Point(404, 185);
+            this.Btn_Drinken.Location = new System.Drawing.Point(404, 184);
             this.Btn_Drinken.Name = "Btn_Drinken";
             this.Btn_Drinken.Size = new System.Drawing.Size(150, 45);
             this.Btn_Drinken.TabIndex = 50;
@@ -102,7 +102,7 @@
             this.Btn_Eten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Eten.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Eten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Eten.Location = new System.Drawing.Point(224, 185);
+            this.Btn_Eten.Location = new System.Drawing.Point(224, 184);
             this.Btn_Eten.Name = "Btn_Eten";
             this.Btn_Eten.Size = new System.Drawing.Size(150, 45);
             this.Btn_Eten.TabIndex = 49;
@@ -116,7 +116,7 @@
             this.Btn_Gereed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Gereed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Gereed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Gereed.Location = new System.Drawing.Point(474, 111);
+            this.Btn_Gereed.Location = new System.Drawing.Point(474, 110);
             this.Btn_Gereed.Name = "Btn_Gereed";
             this.Btn_Gereed.Size = new System.Drawing.Size(150, 45);
             this.Btn_Gereed.TabIndex = 48;
@@ -130,7 +130,7 @@
             this.Btn_Rekening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Rekening.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Rekening.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Rekening.Location = new System.Drawing.Point(294, 111);
+            this.Btn_Rekening.Location = new System.Drawing.Point(294, 110);
             this.Btn_Rekening.Name = "Btn_Rekening";
             this.Btn_Rekening.Size = new System.Drawing.Size(150, 45);
             this.Btn_Rekening.TabIndex = 47;
@@ -144,7 +144,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.button3.Location = new System.Drawing.Point(114, 111);
+            this.button3.Location = new System.Drawing.Point(114, 110);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 45);
             this.button3.TabIndex = 46;
@@ -158,7 +158,7 @@
             this.Btn_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_LogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_LogOut.Location = new System.Drawing.Point(553, 27);
+            this.Btn_LogOut.Location = new System.Drawing.Point(553, 26);
             this.Btn_LogOut.Name = "Btn_LogOut";
             this.Btn_LogOut.Size = new System.Drawing.Size(125, 60);
             this.Btn_LogOut.TabIndex = 45;
@@ -172,11 +172,10 @@
             this.Btn_TafelNr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_TafelNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_TafelNr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_TafelNr.Location = new System.Drawing.Point(154, 27);
+            this.Btn_TafelNr.Location = new System.Drawing.Point(154, 26);
             this.Btn_TafelNr.Name = "Btn_TafelNr";
             this.Btn_TafelNr.Size = new System.Drawing.Size(125, 60);
             this.Btn_TafelNr.TabIndex = 44;
-            this.Btn_TafelNr.Text = "Tafel 1";
             this.Btn_TafelNr.UseVisualStyleBackColor = false;
             // 
             // Btn_Help
@@ -186,7 +185,7 @@
             this.Btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Help.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Help.Location = new System.Drawing.Point(694, 13);
+            this.Btn_Help.Location = new System.Drawing.Point(694, 12);
             this.Btn_Help.Name = "Btn_Help";
             this.Btn_Help.Size = new System.Drawing.Size(48, 67);
             this.Btn_Help.TabIndex = 43;
@@ -200,7 +199,7 @@
             this.Btn_Tafels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafels.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Tafels.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_Tafels.Location = new System.Drawing.Point(14, 27);
+            this.Btn_Tafels.Location = new System.Drawing.Point(14, 26);
             this.Btn_Tafels.Name = "Btn_Tafels";
             this.Btn_Tafels.Size = new System.Drawing.Size(125, 60);
             this.Btn_Tafels.TabIndex = 42;
@@ -213,7 +212,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(648, 904);
+            this.pictureBox2.Location = new System.Drawing.Point(648, 903);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(94, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,7 +225,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.label3.Location = new System.Drawing.Point(549, 951);
+            this.label3.Location = new System.Drawing.Point(549, 950);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 40;
@@ -238,7 +237,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.label2.Location = new System.Drawing.Point(181, 951);
+            this.label2.Location = new System.Drawing.Point(181, 950);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 20);
             this.label2.TabIndex = 39;
@@ -250,7 +249,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 904);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 903);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -264,7 +263,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.button2.Location = new System.Drawing.Point(-1, 896);
+            this.button2.Location = new System.Drawing.Point(-1, 895);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(754, 95);
             this.button2.TabIndex = 37;
@@ -281,7 +280,7 @@
             this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(-1, -1);
+            this.button1.Location = new System.Drawing.Point(-1, -2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(754, 88);
             this.button1.TabIndex = 36;
