@@ -94,6 +94,7 @@
             this.Btn_Drinken.TabIndex = 68;
             this.Btn_Drinken.Text = "Drinken";
             this.Btn_Drinken.UseVisualStyleBackColor = false;
+            this.Btn_Drinken.Click += new System.EventHandler(this.Btn_Drinken_Click);
             // 
             // Btn_Eten
             // 
@@ -122,6 +123,7 @@
             this.Btn_Gereed.TabIndex = 66;
             this.Btn_Gereed.Text = "Gereed";
             this.Btn_Gereed.UseVisualStyleBackColor = false;
+            this.Btn_Gereed.Click += new System.EventHandler(this.Btn_Gereed_Click);
             // 
             // Btn_Rekening
             // 
@@ -136,6 +138,7 @@
             this.Btn_Rekening.TabIndex = 65;
             this.Btn_Rekening.Text = "Rekening";
             this.Btn_Rekening.UseVisualStyleBackColor = false;
+            this.Btn_Rekening.Click += new System.EventHandler(this.Btn_Rekening_Click);
             // 
             // button3
             // 
@@ -164,6 +167,7 @@
             this.Btn_LogOut.TabIndex = 63;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_TafelNr
             // 
@@ -205,6 +209,7 @@
             this.Btn_Tafels.TabIndex = 60;
             this.Btn_Tafels.Text = "Tafels";
             this.Btn_Tafels.UseVisualStyleBackColor = false;
+            this.Btn_Tafels.Click += new System.EventHandler(this.Btn_Tafels_Click);
             // 
             // pictureBox2
             // 

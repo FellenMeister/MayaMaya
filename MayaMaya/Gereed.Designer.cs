@@ -34,7 +34,7 @@
             this.List_Bestellingen = new System.Windows.Forms.ListBox();
             this.Btn_Gereed = new System.Windows.Forms.Button();
             this.Btn_Rekening = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Btn_Bestelling = new System.Windows.Forms.Button();
             this.Btn_LogOut = new System.Windows.Forms.Button();
             this.Btn_TafelNr = new System.Windows.Forms.Button();
             this.Btn_Help = new System.Windows.Forms.Button();
@@ -109,19 +109,20 @@
             this.Btn_Rekening.Text = "Rekening";
             this.Btn_Rekening.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // Btn_Bestelling
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.button3.Location = new System.Drawing.Point(114, 108);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 45);
-            this.button3.TabIndex = 64;
-            this.button3.Text = "Bestelling";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Btn_Bestelling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Bestelling.FlatAppearance.BorderSize = 0;
+            this.Btn_Bestelling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Bestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Bestelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_Bestelling.Location = new System.Drawing.Point(114, 108);
+            this.Btn_Bestelling.Name = "Btn_Bestelling";
+            this.Btn_Bestelling.Size = new System.Drawing.Size(150, 45);
+            this.Btn_Bestelling.TabIndex = 64;
+            this.Btn_Bestelling.Text = "Bestelling";
+            this.Btn_Bestelling.UseVisualStyleBackColor = false;
+            this.Btn_Bestelling.Click += new System.EventHandler(this.Btn_Bestelling_Click);
             // 
             // Btn_LogOut
             // 
@@ -136,6 +137,7 @@
             this.Btn_LogOut.TabIndex = 63;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_TafelNr
             // 
@@ -302,7 +304,7 @@
             this.Controls.Add(this.List_Bestellingen);
             this.Controls.Add(this.Btn_Gereed);
             this.Controls.Add(this.Btn_Rekening);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Btn_Bestelling);
             this.Controls.Add(this.Btn_LogOut);
             this.Controls.Add(this.Btn_TafelNr);
             this.Controls.Add(this.Btn_Help);
@@ -331,7 +333,7 @@
         private System.Windows.Forms.ListBox List_Bestellingen;
         private System.Windows.Forms.Button Btn_Gereed;
         private System.Windows.Forms.Button Btn_Rekening;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Btn_Bestelling;
         private System.Windows.Forms.Button Btn_LogOut;
         private System.Windows.Forms.Button Btn_TafelNr;
         private System.Windows.Forms.Button Btn_Help;

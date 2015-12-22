@@ -195,6 +195,7 @@
             this.Btn_Login.TabIndex = 24;
             this.Btn_Login.Text = "Inloggen";
             this.Btn_Login.UseVisualStyleBackColor = false;
+            this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
             // Btn_Help
             // 

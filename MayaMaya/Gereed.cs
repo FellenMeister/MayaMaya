@@ -16,5 +16,19 @@ namespace MayaMaya
         {
             InitializeComponent();
         }
+
+        private void Btn_Bestelling_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Bestelling scherm = new Bestelling();
+            scherm.Show();
+        }
+
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inlogscherm scherm = new Inlogscherm();
+            scherm.Show();
+        }
     }
 }
