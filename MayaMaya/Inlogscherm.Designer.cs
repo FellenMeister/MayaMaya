@@ -50,7 +50,7 @@
             // 
             this.Txt_Ww.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Ww.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Ww.Location = new System.Drawing.Point(285, 431);
+            this.Txt_Ww.Location = new System.Drawing.Point(285, 417);
             this.Txt_Ww.Name = "Txt_Ww";
             this.Txt_Ww.Size = new System.Drawing.Size(198, 26);
             this.Txt_Ww.TabIndex = 23;
@@ -60,7 +60,7 @@
             // 
             this.Txt_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Login.Location = new System.Drawing.Point(285, 376);
+            this.Txt_Login.Location = new System.Drawing.Point(285, 362);
             this.Txt_Login.Name = "Txt_Login";
             this.Txt_Login.Size = new System.Drawing.Size(198, 26);
             this.Txt_Login.TabIndex = 22;
@@ -84,7 +84,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(309, 399);
+            this.label5.Location = new System.Drawing.Point(309, 385);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 29);
             this.label5.TabIndex = 20;
@@ -96,7 +96,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(344, 344);
+            this.label4.Location = new System.Drawing.Point(344, 330);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 29);
             this.label4.TabIndex = 19;
@@ -189,7 +189,7 @@
             this.Btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Login.Location = new System.Drawing.Point(332, 467);
+            this.Btn_Login.Location = new System.Drawing.Point(332, 453);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.Size = new System.Drawing.Size(100, 40);
             this.Btn_Login.TabIndex = 24;

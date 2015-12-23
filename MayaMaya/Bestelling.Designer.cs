@@ -109,6 +109,7 @@
             this.Btn_Eten.TabIndex = 67;
             this.Btn_Eten.Text = "Eten";
             this.Btn_Eten.UseVisualStyleBackColor = false;
+            this.Btn_Eten.Click += new System.EventHandler(this.Btn_Eten_Click);
             // 
             // Btn_Gereed
             // 
@@ -320,8 +321,10 @@
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Bestelling";
             this.Text = "Bestelling";
+            this.Load += new System.EventHandler(this.Bestelling_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -333,7 +336,6 @@
 
         private System.Windows.Forms.Button Btn_Plaats;
         private System.Windows.Forms.ListBox List_Bestelling;
-        private System.Windows.Forms.ListBox List_Kaart;
         private System.Windows.Forms.Button Btn_Drinken;
         private System.Windows.Forms.Button Btn_Eten;
         private System.Windows.Forms.Button Btn_Gereed;
@@ -349,5 +351,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ListBox List_Kaart;
     }
 }
