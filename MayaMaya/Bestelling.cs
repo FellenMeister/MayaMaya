@@ -42,7 +42,7 @@ namespace MayaMaya
             Gereed scherm = new Gereed();
             scherm.Show();
         }
-        //Hallo
+        //doei
         private void Btn_Drinken_Click(object sender, EventArgs e)
         {
             Btn_Drinken.BackColor = Color.FromArgb(100, 82, 64);
