@@ -10,19 +10,25 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Inlogscherm : Form
+    public partial class Gereedscherm : Form
     {
-        public Inlogscherm()
+        public Gereedscherm()
         {
             InitializeComponent();
         }
 
-        private void Btn_Login_Click(object sender, EventArgs e)
+        private void Btn_Bestelling_Click(object sender, EventArgs e)
         {
             this.Hide();
             Bestellingscherm scherm = new Bestellingscherm();
             scherm.Show();
+        }
 
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inlogscherm scherm = new Inlogscherm();
+            scherm.Show();
         }
     }
 }

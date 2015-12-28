@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class Gereed
+    partial class Gereedscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gereed));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gereedscherm));
             this.Btn_Geserveerd = new System.Windows.Forms.Button();
             this.List_Gereed = new System.Windows.Forms.ListBox();
             this.List_Bestellingen = new System.Windows.Forms.ListBox();

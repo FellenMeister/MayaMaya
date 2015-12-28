@@ -47,17 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bestelling.cs">
+    <Compile Include="Bestelling.cs" />
+    <Compile Include="Bestellingscherm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bestelling.Designer.cs">
-      <DependentUpon>Bestelling.cs</DependentUpon>
+    <Compile Include="Bestellingscherm.Designer.cs">
+      <DependentUpon>Bestellingscherm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gereed.cs">
+    <Compile Include="Gereed.cs" />
+    <Compile Include="Gereedscherm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gereed.Designer.cs">
-      <DependentUpon>Gereed.cs</DependentUpon>
+    <Compile Include="Gereedscherm.Designer.cs">
+      <DependentUpon>Gereedscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Inlogscherm.cs">
       <SubType>Form</SubType>
@@ -66,14 +68,16 @@
       <DependentUpon>Inlogscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs" />
+    <Compile Include="Medewerker.cs" />
     <Compile Include="Methodes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bestelling.resx">
-      <DependentUpon>Bestelling.cs</DependentUpon>
+    <Compile Include="Tafel.cs" />
+    <EmbeddedResource Include="Bestellingscherm.resx">
+      <DependentUpon>Bestellingscherm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gereed.resx">
-      <DependentUpon>Gereed.cs</DependentUpon>
+    <EmbeddedResource Include="Gereedscherm.resx">
+      <DependentUpon>Gereedscherm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inlogscherm.resx">
       <DependentUpon>Inlogscherm.cs</DependentUpon>

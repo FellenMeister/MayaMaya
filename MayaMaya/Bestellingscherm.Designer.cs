@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class Bestelling
+    partial class Bestellingscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bestelling));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bestellingscherm));
             this.Btn_Plaats = new System.Windows.Forms.Button();
             this.List_Bestelling = new System.Windows.Forms.ListBox();
             this.List_Kaart = new System.Windows.Forms.ListBox();
