@@ -16,5 +16,56 @@ namespace MayaMaya
         {
             InitializeComponent();
         }
+
+        private void Btn_Tafel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Tafel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

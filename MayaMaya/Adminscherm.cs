@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Adminscherm : Form
+    public partial class Admin : Form
     {
-        public Adminscherm()
+        public Admin()
         {
             InitializeComponent();
         }

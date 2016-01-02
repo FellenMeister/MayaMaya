@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inlogscherm));
             this.Txt_Ww = new System.Windows.Forms.TextBox();
-            this.Txt_Login = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,23 +46,14 @@
             // 
             // Txt_Ww
             // 
+            this.Txt_Ww.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.Txt_Ww.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Ww.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Ww.Location = new System.Drawing.Point(285, 417);
+            this.Txt_Ww.Location = new System.Drawing.Point(285, 382);
             this.Txt_Ww.Name = "Txt_Ww";
             this.Txt_Ww.Size = new System.Drawing.Size(198, 26);
             this.Txt_Ww.TabIndex = 23;
             this.Txt_Ww.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Txt_Login
-            // 
-            this.Txt_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Txt_Login.Location = new System.Drawing.Point(285, 362);
-            this.Txt_Login.Name = "Txt_Login";
-            this.Txt_Login.Size = new System.Drawing.Size(198, 26);
-            this.Txt_Login.TabIndex = 22;
-            this.Txt_Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button3
             // 
@@ -84,23 +73,11 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label5.Location = new System.Drawing.Point(309, 385);
+            this.label5.Location = new System.Drawing.Point(309, 350);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 29);
             this.label5.TabIndex = 20;
             this.label5.Text = "Wachtwoord";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.label4.Location = new System.Drawing.Point(344, 330);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 29);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Login";
             // 
             // pictureBox2
             // 
@@ -221,10 +198,8 @@
             this.Controls.Add(this.Btn_Help);
             this.Controls.Add(this.Btn_Login);
             this.Controls.Add(this.Txt_Ww);
-            this.Controls.Add(this.Txt_Login);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -248,10 +223,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox Txt_Ww;
-        private System.Windows.Forms.TextBox Txt_Login;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

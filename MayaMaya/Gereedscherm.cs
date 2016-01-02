@@ -17,10 +17,24 @@ namespace MayaMaya
             InitializeComponent();
         }
 
+        private void Btn_Tafels_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tafelscherm scherm = new Tafelscherm();
+            scherm.Show();
+        }
+
         private void Btn_Bestelling_Click(object sender, EventArgs e)
         {
             this.Hide();
             Bestellingscherm scherm = new Bestellingscherm();
+            scherm.Show();
+        }
+
+        private void Btn_Rekening_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Afrekenscherm scherm = new Afrekenscherm();
             scherm.Show();
         }
 
@@ -30,5 +44,7 @@ namespace MayaMaya
             Inlogscherm scherm = new Inlogscherm();
             scherm.Show();
         }
+
+       
     }
 }

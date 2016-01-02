@@ -28,12 +28,16 @@ namespace MayaMaya
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Tafelscherm scherm = new Tafelscherm();
+            scherm.Show();
         }
 
         private void Btn_Rekening_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Afrekenscherm scherm = new Afrekenscherm();
+            scherm.Show();
         }
 
         private void Btn_Gereed_Click(object sender, EventArgs e)

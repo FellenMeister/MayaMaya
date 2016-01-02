@@ -110,6 +110,7 @@
             this.Btn_Rekening.TabIndex = 65;
             this.Btn_Rekening.Text = "Rekening";
             this.Btn_Rekening.UseVisualStyleBackColor = false;
+            this.Btn_Rekening.Click += new System.EventHandler(this.Btn_Rekening_Click);
             // 
             // Btn_Bestelling
             // 
@@ -181,6 +182,7 @@
             this.Btn_Tafels.TabIndex = 60;
             this.Btn_Tafels.Text = "Tafels";
             this.Btn_Tafels.UseVisualStyleBackColor = false;
+            this.Btn_Tafels.Click += new System.EventHandler(this.Btn_Tafels_Click);
             // 
             // pictureBox2
             // 
