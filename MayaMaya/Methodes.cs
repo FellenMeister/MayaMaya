@@ -30,6 +30,70 @@ namespace MayaMaya
         {
             this.naam = naam;
         }
+
+        // Algemeen
+
+        public void LogIn(Inlogscherm inlog, int wachtwoord)
+        {
+            int id;
+            string naam, functie = "";
+            bool ingelogd;
+
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+
+            SqlCommand command = new SqlCommand("Select * From medewerker", conn);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+
+            {
+                id = (int)reader["medewerker_id"];
+                naam = (string)reader["medewerker_naam"];
+                int password = (int)reader["medewerker_wachtwoord"];
+                ingelogd = (bool)reader["medewerker_ingelogd"];
+            }
+            conn.Close();
+
+            switch (functie)
+            {
+                case "Admin":
+                    inlog.Hide();
+                    Admin Admin = new Admin();
+                    Admin.Show();
+                    break;
+
+                    case "Bediening":
+                    inlog.Hide();
+                    Bestellingscherm Bediening = new Bestellingscherm();
+                    Bediening.Show();
+                    break;
+
+                case "Keuken":
+                    inlog.Hide();
+                    Keukenscherm Keuken = new Keukenscherm();
+                    Keuken.Show();
+                    break;
+
+                case "Bar":
+                    inlog.Hide();
+                    Barscherm Bar = new Barscherm();
+                    Bar.Show();
+                    break;
+
+                case "Manager":
+                    inlog.Hide();
+                    Managerscherm Manager = new Managerscherm();
+                    Manager.Show();
+                    break;
+
+                default:
+                    MessageBox.Show("Je bent raar");
+                    break;
+
+            }
+        }
+
         // Bediening
 
         public void LeesEten()
