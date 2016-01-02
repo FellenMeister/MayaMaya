@@ -10,3 +10,6 @@ C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Bestellingscherm.resources
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Gereedscherm.resources
+C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
+C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
+C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
