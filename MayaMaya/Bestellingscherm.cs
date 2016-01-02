@@ -33,7 +33,7 @@ namespace MayaMaya
 
         private void Btn_Rekening_Click(object sender, EventArgs e)
         {
-            //hallo
+            
         }
 
         private void Btn_Gereed_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace MayaMaya
             Gereedscherm scherm = new Gereedscherm();
             scherm.Show();
         }
-        //Hallo
+        
         private void Btn_Drinken_Click(object sender, EventArgs e)
         {
             Btn_Drinken.BackColor = Color.FromArgb(100, 82, 64);
