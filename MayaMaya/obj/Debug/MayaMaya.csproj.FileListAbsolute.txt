@@ -13,3 +13,6 @@ C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Gereedscherm.re
 C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
 C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
 C:\Users\Who\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
+C:\Users\1\Documents\GitHub\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
+C:\Users\1\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
+C:\Users\1\Documents\GitHub\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
