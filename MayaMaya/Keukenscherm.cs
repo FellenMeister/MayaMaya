@@ -16,5 +16,15 @@ namespace MayaMaya
         {
             InitializeComponent();
         }
+
+        private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Eten_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
