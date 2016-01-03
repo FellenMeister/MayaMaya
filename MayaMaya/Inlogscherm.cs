@@ -21,7 +21,14 @@ namespace MayaMaya
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            
+            int wachtwoord = int.Parse(Txt_Ww.Text);
+            this.Hide();
+            MayaMaya.LogIn(wachtwoord);
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Voer je wachtwoord in en druk op oke.\nBent u uw wachtwoord vergeten neem contact op met de Admin.");
         }
     }
-}
+}    

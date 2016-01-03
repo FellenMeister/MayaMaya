@@ -65,9 +65,8 @@ namespace MayaMaya
 
         private void Btn_LogOut_Click(object sender, EventArgs e)
         {
+            MayaMaya.LogUit();
             this.Hide();
-            Inlogscherm scherm = new Inlogscherm();
-            scherm.Show();
         }
 
     }

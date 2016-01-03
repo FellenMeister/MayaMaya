@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,64 +33,88 @@ namespace MayaMaya
 
         // Algemeen
 
-        public void LogIn(Inlogscherm inlog, int wachtwoord)
+        public void LogIn(int wachtwoord)
         {
-            int id;
+            int id, password = 0;
             string naam, functie = "";
             bool ingelogd;
+            bool login = false;
 
             string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
 
-            SqlCommand command = new SqlCommand("Select * From medewerker", conn);
-            SqlDataReader reader = command.ExecuteReader();
+            SqlCommand command = new SqlCommand("Select * From medewerker where medewerker_wachtwoord = @password; update medewerker set medewerker_ingelogd = 1 where medewerker_wachtwoord = @password", conn);
+            command.Parameters.Add("@password", SqlDbType.Int).Value = wachtwoord;
+            SqlDataReader reader = command.ExecuteReader();           
             while (reader.Read())
 
             {
                 id = (int)reader["medewerker_id"];
                 naam = (string)reader["medewerker_naam"];
-                int password = (int)reader["medewerker_wachtwoord"];
+                functie = (string)reader["medewerker_functie"];
+                password = (int)reader["medewerker_wachtwoord"];
                 ingelogd = (bool)reader["medewerker_ingelogd"];
+                login = true;
+
+                    switch (functie)
+                    {
+                        case "Admin":
+                            Admin Admin = new Admin();
+                            Admin.Show();
+                            return;
+
+                        case "Bediening":
+                            Bestellingscherm Bediening = new Bestellingscherm();
+                            Bediening.Show();
+                            return;
+
+                        case "Keuken":
+                            Keukenscherm Keuken = new Keukenscherm();
+                            Keuken.Show();
+                            return;
+
+                        case "Bar":
+                            Barscherm Bar = new Barscherm();
+                            Bar.Show();
+                            return;
+
+                        case "Manager":
+                            Managerscherm Manager = new Managerscherm();
+                            Manager.Show();
+                            return;
+
+                        default:
+                            return;
+                    }
             }
             conn.Close();
-
-            switch (functie)
+            if (login == false)
             {
-                case "Admin":
-                    inlog.Hide();
-                    Admin Admin = new Admin();
-                    Admin.Show();
-                    break;
+                Inlogscherm inlog = new Inlogscherm();
+                inlog.Show();
+                MessageBox.Show("Verkeerd wachtwoord ingevoerd");
+            }
+        }
 
-                    case "Bediening":
-                    inlog.Hide();
-                    Bestellingscherm Bediening = new Bestellingscherm();
-                    Bediening.Show();
-                    break;
+        public void LogUit()
+        {
+            DialogResult logoutresult = MessageBox.Show("Weet je zeker dat je wilt uitloggen?", "Logout", MessageBoxButtons.YesNo);
+            if (logoutresult == DialogResult.Yes)
+            {
+                
+                Inlogscherm scherm = new Inlogscherm();
+                scherm.Show();
+                MessageBox.Show("Je bent uitgelogd");
 
-                case "Keuken":
-                    inlog.Hide();
-                    Keukenscherm Keuken = new Keukenscherm();
-                    Keuken.Show();
-                    break;
+                string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+                SqlConnection conn = new SqlConnection(connString);
+                conn.Open();
 
-                case "Bar":
-                    inlog.Hide();
-                    Barscherm Bar = new Barscherm();
-                    Bar.Show();
-                    break;
-
-                case "Manager":
-                    inlog.Hide();
-                    Managerscherm Manager = new Managerscherm();
-                    Manager.Show();
-                    break;
-
-                default:
-                    MessageBox.Show("Je bent raar");
-                    break;
-
+                SqlCommand command = new SqlCommand("update medewerker set medewerker_ingelogd = 0 where medewerker_ingelogd = @password", conn);
+                command.Parameters.Add("@password", SqlDbType.Int).Value = 1;
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
             }
         }
 

@@ -54,6 +54,7 @@
             this.Txt_Ww.Size = new System.Drawing.Size(198, 26);
             this.Txt_Ww.TabIndex = 23;
             this.Txt_Ww.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Txt_Ww.UseSystemPasswordChar = true;
             // 
             // button3
             // 
@@ -187,6 +188,7 @@
             this.Btn_Help.TabIndex = 25;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Inlogscherm
             // 
