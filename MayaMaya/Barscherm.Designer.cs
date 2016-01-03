@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(List_Barscherm));
             this.List_Gereed = new System.Windows.Forms.ListBox();
-            this.Btn_BarVoorraad = new System.Windows.Forms.Button();
+            this.Btn_Voorraad = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Btn_Gereed = new System.Windows.Forms.Button();
@@ -60,19 +60,19 @@
             this.List_Gereed.Size = new System.Drawing.Size(349, 420);
             this.List_Gereed.TabIndex = 128;
             // 
-            // Btn_BarVoorraad
+            // Btn_Voorraad
             // 
-            this.Btn_BarVoorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
-            this.Btn_BarVoorraad.FlatAppearance.BorderSize = 0;
-            this.Btn_BarVoorraad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_BarVoorraad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_BarVoorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_BarVoorraad.Location = new System.Drawing.Point(157, 26);
-            this.Btn_BarVoorraad.Name = "Btn_BarVoorraad";
-            this.Btn_BarVoorraad.Size = new System.Drawing.Size(125, 60);
-            this.Btn_BarVoorraad.TabIndex = 127;
-            this.Btn_BarVoorraad.Text = "Voorraad";
-            this.Btn_BarVoorraad.UseVisualStyleBackColor = false;
+            this.Btn_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
+            this.Btn_Voorraad.FlatAppearance.BorderSize = 0;
+            this.Btn_Voorraad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Voorraad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Voorraad.Location = new System.Drawing.Point(157, 26);
+            this.Btn_Voorraad.Name = "Btn_Voorraad";
+            this.Btn_Voorraad.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Voorraad.TabIndex = 127;
+            this.Btn_Voorraad.Text = "Voorraad";
+            this.Btn_Voorraad.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -80,9 +80,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(836, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 20);
+            this.label7.Size = new System.Drawing.Size(74, 20);
             this.label7.TabIndex = 126;
-            this.label7.Text = "Gereed";
+            this.label7.Text = "Gereed:";
             // 
             // label6
             // 
@@ -90,9 +90,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(33, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(113, 20);
             this.label6.TabIndex = 125;
-            this.label6.Text = "Bestellingen";
+            this.label6.Text = "Bestellingen:";
             // 
             // Btn_Gereed
             // 
@@ -199,6 +199,7 @@
             this.Btn_LogOut.TabIndex = 117;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -249,9 +250,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
             this.Controls.Add(this.List_Gereed);
-            this.Controls.Add(this.Btn_BarVoorraad);
+            this.Controls.Add(this.Btn_Voorraad);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Gereed);
@@ -265,8 +267,10 @@
             this.Controls.Add(this.Btn_Help);
             this.Controls.Add(this.Btn_Bar);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "List_Barscherm";
             this.Text = "Barscherm";
+            this.Load += new System.EventHandler(this.List_Barscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -277,7 +281,7 @@
         #endregion
 
         public System.Windows.Forms.ListBox List_Gereed;
-        private System.Windows.Forms.Button Btn_BarVoorraad;
+        private System.Windows.Forms.Button Btn_Voorraad;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Btn_Gereed;

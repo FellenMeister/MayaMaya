@@ -41,7 +41,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Btn_LogOut = new System.Windows.Forms.Button();
             this.Btn_Help = new System.Windows.Forms.Button();
-            this.Btn_Admin = new System.Windows.Forms.Button();
+            this.Btn_Bar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,9 +79,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(664, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(223, 20);
+            this.label7.Size = new System.Drawing.Size(228, 20);
             this.label7.TabIndex = 140;
-            this.label7.Text = "Laatst gewijzigde voorraad";
+            this.label7.Text = "Laatst gewijzigde voorraad:";
             // 
             // label6
             // 
@@ -89,9 +89,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(33, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 20);
+            this.label6.Size = new System.Drawing.Size(88, 20);
             this.label6.TabIndex = 139;
-            this.label6.Text = "Voorraad";
+            this.label6.Text = "Voorraad:";
             // 
             // List_Voorraad
             // 
@@ -184,6 +184,7 @@
             this.Btn_LogOut.TabIndex = 132;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -199,19 +200,19 @@
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
             // 
-            // Btn_Admin
+            // Btn_Bar
             // 
-            this.Btn_Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
-            this.Btn_Admin.FlatAppearance.BorderSize = 0;
-            this.Btn_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_Admin.Location = new System.Drawing.Point(14, 26);
-            this.Btn_Admin.Name = "Btn_Admin";
-            this.Btn_Admin.Size = new System.Drawing.Size(125, 60);
-            this.Btn_Admin.TabIndex = 130;
-            this.Btn_Admin.Text = "Bar";
-            this.Btn_Admin.UseVisualStyleBackColor = false;
+            this.Btn_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
+            this.Btn_Bar.FlatAppearance.BorderSize = 0;
+            this.Btn_Bar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Bar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Bar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Bar.Location = new System.Drawing.Point(14, 26);
+            this.Btn_Bar.Name = "Btn_Bar";
+            this.Btn_Bar.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Bar.TabIndex = 130;
+            this.Btn_Bar.Text = "Bar";
+            this.Btn_Bar.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -234,6 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
             this.Controls.Add(this.List_Wijziging);
             this.Controls.Add(this.button3);
@@ -247,8 +249,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Btn_LogOut);
             this.Controls.Add(this.Btn_Help);
-            this.Controls.Add(this.Btn_Admin);
+            this.Controls.Add(this.Btn_Bar);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "btn_BarVoorraad";
             this.Text = "Barvoorraadscherm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -272,7 +275,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Btn_LogOut;
         private System.Windows.Forms.Button Btn_Help;
-        private System.Windows.Forms.Button Btn_Admin;
+        private System.Windows.Forms.Button Btn_Bar;
         private System.Windows.Forms.Button button1;
     }
 }

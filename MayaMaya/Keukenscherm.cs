@@ -12,9 +12,11 @@ namespace MayaMaya
 {
     public partial class List_Keukenscherm : Form
     {
+        Methodes MayaMaya;
         public List_Keukenscherm()
         {
             InitializeComponent();
+            MayaMaya = new Methodes("MayaMaya");
         }
 
         private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)
@@ -27,9 +29,15 @@ namespace MayaMaya
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Btn_Voorraad_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            MayaMaya.LogUit();
+            this.Hide();
         }
     }
 }

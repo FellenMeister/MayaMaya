@@ -12,9 +12,17 @@ namespace MayaMaya
 {
     public partial class btn_BarVoorraad : Form
     {
+        Methodes MayaMaya;
         public btn_BarVoorraad()
         {
             InitializeComponent();
+            MayaMaya = new Methodes("MayaMaya");
+        }
+
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            MayaMaya.LogUit();
+            this.Hide();
         }
     }
 }

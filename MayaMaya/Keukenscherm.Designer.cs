@@ -42,7 +42,7 @@
             this.Btn_Help = new System.Windows.Forms.Button();
             this.Btn_Admin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Btn_Voorraad = new System.Windows.Forms.Button();
             this.List_Gereed = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,9 +54,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(836, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 20);
+            this.label7.Size = new System.Drawing.Size(74, 20);
             this.label7.TabIndex = 111;
-            this.label7.Text = "Gereed";
+            this.label7.Text = "Gereed:";
             // 
             // label6
             // 
@@ -64,9 +64,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(33, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(113, 20);
             this.label6.TabIndex = 110;
-            this.label6.Text = "Bestellingen";
+            this.label6.Text = "Bestellingen:";
             // 
             // Btn_Gereed
             // 
@@ -173,6 +173,7 @@
             this.Btn_LogOut.TabIndex = 92;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -219,20 +220,20 @@
             this.button1.UseMnemonic = false;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // Btn_Voorraad
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.button3.Location = new System.Drawing.Point(157, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 60);
-            this.button3.TabIndex = 112;
-            this.button3.Text = "Voorraad";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Btn_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
+            this.Btn_Voorraad.FlatAppearance.BorderSize = 0;
+            this.Btn_Voorraad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Voorraad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Voorraad.Location = new System.Drawing.Point(157, 26);
+            this.Btn_Voorraad.Name = "Btn_Voorraad";
+            this.Btn_Voorraad.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Voorraad.TabIndex = 112;
+            this.Btn_Voorraad.Text = "Voorraad";
+            this.Btn_Voorraad.UseVisualStyleBackColor = false;
+            this.Btn_Voorraad.Click += new System.EventHandler(this.Btn_Voorraad_Click);
             // 
             // List_Gereed
             // 
@@ -253,7 +254,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
             this.Controls.Add(this.List_Gereed);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Btn_Voorraad);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Gereed);
@@ -292,7 +293,7 @@
         private System.Windows.Forms.Button Btn_Help;
         private System.Windows.Forms.Button Btn_Admin;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Btn_Voorraad;
         public System.Windows.Forms.ListBox List_Gereed;
 
 

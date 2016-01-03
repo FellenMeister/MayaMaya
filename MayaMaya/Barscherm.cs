@@ -12,9 +12,22 @@ namespace MayaMaya
 {
     public partial class List_Barscherm : Form
     {
+        Methodes MayaMaya;
         public List_Barscherm()
         {
             InitializeComponent();
+            MayaMaya = new Methodes("MayaMaya");
+        }
+
+        private void List_Barscherm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            MayaMaya.LogUit();
+            this.Hide();
         }
     }
 }

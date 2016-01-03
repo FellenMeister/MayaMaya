@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(List_Keukenvoorraadscherm));
             this.List_Wijziging = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Btn_Voorraad = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.List_Voorraad = new System.Windows.Forms.ListBox();
@@ -41,7 +41,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Btn_LogOut = new System.Windows.Forms.Button();
             this.Btn_Help = new System.Windows.Forms.Button();
-            this.Btn_Admin = new System.Windows.Forms.Button();
+            this.Btn_Keuken = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,19 +59,19 @@
             this.List_Wijziging.Size = new System.Drawing.Size(557, 420);
             this.List_Wijziging.TabIndex = 128;
             // 
-            // button3
+            // Btn_Voorraad
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.button3.Location = new System.Drawing.Point(157, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 60);
-            this.button3.TabIndex = 127;
-            this.button3.Text = "Voorraad";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Btn_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_Voorraad.FlatAppearance.BorderSize = 0;
+            this.Btn_Voorraad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Voorraad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Voorraad.Location = new System.Drawing.Point(157, 26);
+            this.Btn_Voorraad.Name = "Btn_Voorraad";
+            this.Btn_Voorraad.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Voorraad.TabIndex = 127;
+            this.Btn_Voorraad.Text = "Voorraad";
+            this.Btn_Voorraad.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -79,9 +79,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(664, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(223, 20);
+            this.label7.Size = new System.Drawing.Size(228, 20);
             this.label7.TabIndex = 126;
-            this.label7.Text = "Laatst gewijzigde voorraad";
+            this.label7.Text = "Laatst gewijzigde voorraad:";
             // 
             // label6
             // 
@@ -89,9 +89,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(33, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 20);
+            this.label6.Size = new System.Drawing.Size(88, 20);
             this.label6.TabIndex = 125;
-            this.label6.Text = "Voorraad";
+            this.label6.Text = "Voorraad:";
             // 
             // List_Voorraad
             // 
@@ -184,6 +184,7 @@
             this.Btn_LogOut.TabIndex = 117;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -199,19 +200,19 @@
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
             // 
-            // Btn_Admin
+            // Btn_Keuken
             // 
-            this.Btn_Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
-            this.Btn_Admin.FlatAppearance.BorderSize = 0;
-            this.Btn_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_Admin.Location = new System.Drawing.Point(14, 26);
-            this.Btn_Admin.Name = "Btn_Admin";
-            this.Btn_Admin.Size = new System.Drawing.Size(125, 60);
-            this.Btn_Admin.TabIndex = 115;
-            this.Btn_Admin.Text = "Keuken";
-            this.Btn_Admin.UseVisualStyleBackColor = false;
+            this.Btn_Keuken.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
+            this.Btn_Keuken.FlatAppearance.BorderSize = 0;
+            this.Btn_Keuken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Keuken.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Keuken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Keuken.Location = new System.Drawing.Point(14, 26);
+            this.Btn_Keuken.Name = "Btn_Keuken";
+            this.Btn_Keuken.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Keuken.TabIndex = 115;
+            this.Btn_Keuken.Text = "Keuken";
+            this.Btn_Keuken.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -234,9 +235,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
             this.Controls.Add(this.List_Wijziging);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Btn_Voorraad);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.List_Voorraad);
@@ -247,8 +249,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Btn_LogOut);
             this.Controls.Add(this.Btn_Help);
-            this.Controls.Add(this.Btn_Admin);
+            this.Controls.Add(this.Btn_Keuken);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "List_Keukenvoorraadscherm";
             this.Text = "Keukenvoorraadscherm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -261,7 +264,7 @@
         #endregion
 
         public System.Windows.Forms.ListBox List_Wijziging;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Btn_Voorraad;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.ListBox List_Voorraad;
@@ -272,7 +275,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Btn_LogOut;
         private System.Windows.Forms.Button Btn_Help;
-        private System.Windows.Forms.Button Btn_Admin;
+        private System.Windows.Forms.Button Btn_Keuken;
         private System.Windows.Forms.Button button1;
     }
 }
