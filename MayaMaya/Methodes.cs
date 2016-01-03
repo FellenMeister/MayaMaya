@@ -20,6 +20,7 @@ namespace MayaMaya
         // lijsten
        public List<Item> eten = new List<Item>();
        public List<Item> drinken = new List<Item>();
+       public List<Medewerker> medewerkers = new List<Medewerker>();
 
         // tijd
         private TimeSpan tijd = new TimeSpan(17, 0, 0);
@@ -275,5 +276,60 @@ namespace MayaMaya
 
 
         // Admin
+        public void LeesMedewerkers()
+        {
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+
+            SqlCommand command = new SqlCommand("Select * From medewerker", conn);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+
+            {
+                int id = (int)reader["medewerker_id"];
+                string naam = (string)reader["medewerker_naam"];
+                string functie = (string)reader["medewerker_functie"];
+                int wachtwoord = (int)reader["medewerker_wachtwoord"];
+                bool ingelogd = (bool)reader["medewerker_ingelogd"];
+
+                Medewerker medewerker = new Medewerker(id, naam, functie, wachtwoord, ingelogd);
+                medewerkers.Add(medewerker);
+            }
+            conn.Close();
+        }
+
+        public void ToonMedewerker(ListBox lijst)
+        {
+            foreach (Medewerker medewerker in medewerkers)
+            {
+                lijst.Items.Add(medewerker);
+            }
+            lijst.SelectedIndex = 0;
+        }
+
+        //public void AddMedewerker()
+        //{
+        //    //using (SqlConnection connection = new SqlConnection(connectionString))
+        //    //{
+        //    //    SqlCommand cmd = new SqlCommand("INSERT INTO Data (Name, PhoneNo, Address) VALUES (@Name, @PhoneNo, @Address)");
+        //    //    cmd.CommandType = CommandType.Text;
+        //    //    cmd.Connection = connection;
+        //    //    cmd.Parameters.AddWithValue("@Name", txtName.Text);
+        //    //    cmd.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
+        //    //    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+        //    //    connection.Open();
+        //    //    cmd.ExecuteNonQuery();
+        //    //}
+
+        //    string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+        //    SqlConnection conn = new SqlConnection(connString);
+        //    conn.Open();
+
+        //    SqlCommand cmd = new SqlCommand("INSERT INTO medewerker (medewerker_id, medewerker_naam, medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd) VALUES @medewerker_id, @medewerker_naam, @medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd)", conn);
+        //    cmd.CommandType = CommandType.Text;
+        //    cmd.Connection = conn;
+        //    cmd.Parameters.AddWithValue("@medewerker_naam", "ka");
+        //}
     }
 }

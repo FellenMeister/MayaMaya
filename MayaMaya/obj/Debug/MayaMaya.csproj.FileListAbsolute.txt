@@ -22,3 +22,6 @@ C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Barscherm.resou
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Keukenscherm.resources
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.btn_BarVoorraad.resources
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.List_Keukenvoorraadscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
