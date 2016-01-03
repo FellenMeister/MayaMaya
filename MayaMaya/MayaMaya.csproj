@@ -73,6 +73,7 @@
       <DependentUpon>Barvoorraadscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Bestelling.cs" />
+    <Compile Include="BestellingItem.cs" />
     <Compile Include="Bestellingscherm.cs">
       <SubType>Form</SubType>
     </Compile>

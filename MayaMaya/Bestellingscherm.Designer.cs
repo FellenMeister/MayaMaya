@@ -50,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Lbl_Naam = new System.Windows.Forms.Label();
+            this.lbl_Tafelnr = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +84,7 @@
             this.List_Kaart.Name = "List_Kaart";
             this.List_Kaart.Size = new System.Drawing.Size(309, 550);
             this.List_Kaart.TabIndex = 69;
+            this.List_Kaart.SelectedIndexChanged += new System.EventHandler(this.List_Kaart_SelectedIndexChanged);
             // 
             // Btn_Drinken
             // 
@@ -332,12 +334,23 @@
             this.Lbl_Naam.Text = "Naam";
             this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // lbl_Tafelnr
+            // 
+            this.lbl_Tafelnr.AutoSize = true;
+            this.lbl_Tafelnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.lbl_Tafelnr.Location = new System.Drawing.Point(180, 42);
+            this.lbl_Tafelnr.Name = "lbl_Tafelnr";
+            this.lbl_Tafelnr.Size = new System.Drawing.Size(79, 26);
+            this.lbl_Tafelnr.TabIndex = 78;
+            this.lbl_Tafelnr.Text = "tafelnr";
+            // 
             // Bestellingscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.lbl_Tafelnr);
             this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -395,5 +408,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Lbl_Naam;
+        private System.Windows.Forms.Label lbl_Tafelnr;
     }
 }

@@ -13,12 +13,20 @@ namespace MayaMaya
     public partial class Bestellingscherm : Form
     {
         Methodes MayaMaya;
+        Tafelscherm tafel;
+        bool eten = true;
         public Bestellingscherm()
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
+            tafel = new Tafelscherm();
+            int nr = tafel.tafelnummer;
             string naam = MayaMaya.Naam();
             Lbl_Naam.Text = naam;
+            ////lbl_Tafelnr.Text = MayaMaya.Tafelnummer(nr);
+            
+
+           
         }
 
         private void Bestelling_Load(object sender, EventArgs e)
@@ -26,6 +34,12 @@ namespace MayaMaya
             MayaMaya.LeesEten();
             MayaMaya.LeesDrinken();
             MayaMaya.ToonEten(List_Kaart);
+        }
+
+        private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int item = List_Kaart.SelectedIndex;
+            MayaMaya.NeemOp(item, eten);
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
@@ -55,6 +69,7 @@ namespace MayaMaya
             Btn_Eten.BackColor = Color.FromArgb(139, 74, 54);
             List_Kaart.Items.Clear();
             MayaMaya.ToonDrinken(List_Kaart);
+            eten = false;
         }
 
         private void Btn_Eten_Click(object sender, EventArgs e)
@@ -63,6 +78,7 @@ namespace MayaMaya
             Btn_Drinken.BackColor = Color.FromArgb(139, 74, 54);
             List_Kaart.Items.Clear();
             MayaMaya.ToonEten(List_Kaart);
+            eten = true;
         }
 
         private void Btn_LogOut_Click(object sender, EventArgs e)
@@ -70,6 +86,5 @@ namespace MayaMaya
             MayaMaya.LogUit();
             this.Hide();
         }
-
     }
 }
