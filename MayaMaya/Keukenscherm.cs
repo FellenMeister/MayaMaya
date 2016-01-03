@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Keukenscherm : Form
+    public partial class List_Keukenscherm : Form
     {
-        public Keukenscherm()
+        public List_Keukenscherm()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace MayaMaya
         }
 
         private void Btn_Eten_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

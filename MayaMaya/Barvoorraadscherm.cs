@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Barvoorraadscherm : Form
+    public partial class btn_BarVoorraad : Form
     {
-        public Barvoorraadscherm()
+        public btn_BarVoorraad()
         {
             InitializeComponent();
         }
