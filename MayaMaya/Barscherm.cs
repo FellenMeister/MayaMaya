@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class List_Barscherm : Form
+    public partial class Barscherm : Form
     {
         Methodes MayaMaya;
-        public List_Barscherm()
+        public Barscherm()
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void List_Barscherm_Load(object sender, EventArgs e)

@@ -17,6 +17,8 @@ namespace MayaMaya
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void Btn_LogOut_Click(object sender, EventArgs e)

@@ -49,6 +49,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Lbl_Naam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -317,12 +318,27 @@
             this.label4.TabIndex = 76;
             this.label4.Text = "Kaart";
             // 
+            // Lbl_Naam
+            // 
+            this.Lbl_Naam.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Lbl_Naam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Lbl_Naam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Naam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Lbl_Naam.Location = new System.Drawing.Point(327, 64);
+            this.Lbl_Naam.Name = "Lbl_Naam";
+            this.Lbl_Naam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Lbl_Naam.Size = new System.Drawing.Size(220, 20);
+            this.Lbl_Naam.TabIndex = 77;
+            this.Lbl_Naam.Text = "Naam";
+            this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Bestellingscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_Plaats);
@@ -378,5 +394,6 @@
         public System.Windows.Forms.ListBox List_Kaart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Lbl_Naam;
     }
 }

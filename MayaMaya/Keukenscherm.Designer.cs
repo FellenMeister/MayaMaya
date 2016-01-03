@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class List_Keukenscherm
+    partial class Keukenscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(List_Keukenscherm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Keukenscherm));
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Btn_Gereed = new System.Windows.Forms.Button();
@@ -44,6 +44,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Btn_Voorraad = new System.Windows.Forms.Button();
             this.List_Gereed = new System.Windows.Forms.ListBox();
+            this.Lbl_Naam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -247,12 +248,27 @@
             this.List_Gereed.Size = new System.Drawing.Size(349, 420);
             this.List_Gereed.TabIndex = 113;
             // 
-            // List_Keukenscherm
+            // Lbl_Naam
+            // 
+            this.Lbl_Naam.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Lbl_Naam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Lbl_Naam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Naam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Lbl_Naam.Location = new System.Drawing.Point(838, 66);
+            this.Lbl_Naam.Name = "Lbl_Naam";
+            this.Lbl_Naam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Lbl_Naam.Size = new System.Drawing.Size(220, 20);
+            this.Lbl_Naam.TabIndex = 114;
+            this.Lbl_Naam.Text = "Naam";
+            this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Keukenscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
+            this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.List_Gereed);
             this.Controls.Add(this.Btn_Voorraad);
             this.Controls.Add(this.label7);
@@ -269,7 +285,7 @@
             this.Controls.Add(this.Btn_Admin);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Name = "List_Keukenscherm";
+            this.Name = "Keukenscherm";
             this.Text = "Keukenscherm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -295,7 +311,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Btn_Voorraad;
         public System.Windows.Forms.ListBox List_Gereed;
-
-
+        private System.Windows.Forms.Label Lbl_Naam;
     }
 }

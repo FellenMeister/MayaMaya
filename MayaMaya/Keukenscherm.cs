@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class List_Keukenscherm : Form
+    public partial class Keukenscherm : Form
     {
         Methodes MayaMaya;
-        public List_Keukenscherm()
+        public Keukenscherm()
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)

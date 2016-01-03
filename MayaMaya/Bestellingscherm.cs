@@ -17,6 +17,8 @@ namespace MayaMaya
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void Bestelling_Load(object sender, EventArgs e)

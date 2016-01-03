@@ -65,6 +65,8 @@ namespace MayaMaya
                             return;
 
                         case "Bediening":
+                            Tafelscherm tafel = new Tafelscherm();
+                            tafel.Show();
                             Bestellingscherm Bediening = new Bestellingscherm();
                             Bediening.Show();
                             return;
@@ -111,13 +113,67 @@ namespace MayaMaya
                 SqlConnection conn = new SqlConnection(connString);
                 conn.Open();
 
-                SqlCommand command = new SqlCommand("update medewerker set medewerker_ingelogd = 0 where medewerker_ingelogd = @password", conn);
-                command.Parameters.Add("@password", SqlDbType.Int).Value = 1;
+                SqlCommand command = new SqlCommand("update medewerker set medewerker_ingelogd = 0 where medewerker_ingelogd = @log", conn);
+                command.Parameters.Add("@log", SqlDbType.Int).Value = 1;
                 SqlDataReader reader = command.ExecuteReader();
                 conn.Close();
             }
         }
 
+        public string Naam()
+        {
+            string naamMedewerker = "";
+
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+
+            SqlCommand command = new SqlCommand("select medewerker_naam from medewerker where medewerker_ingelogd = @log", conn);
+            command.Parameters.Add("@log", SqlDbType.Bit).Value = 1;
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                naamMedewerker = (string)reader["medewerker_naam"];
+            }
+            conn.Close();
+
+            return naamMedewerker;
+        }
+
+        //Tafels
+
+            public void TafelKleur(Button tafel, int nummer)
+        {
+            string status = " ";
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+
+            SqlCommand command = new SqlCommand("Select * From tafel where nummer = @nummer", conn);
+            command.Parameters.Add("@nummer", SqlDbType.Int).Value = nummer;
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+
+            {
+                status = (string)reader["status"];
+               
+                switch (status)
+                {
+                    case "Gereserveerd":
+                        tafel.ForeColor = Color.Orange;
+                        return;
+
+                    case "Bezet":
+                        tafel.ForeColor = Color.Red;
+                        return;
+
+                    default:
+                        return;
+                }
+            }
+            conn.Close();
+        }
+        
         // Bediening
 
         public void LeesEten()

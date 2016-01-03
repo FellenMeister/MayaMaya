@@ -20,3 +20,5 @@ C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Tafelscherm.res
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Admin.resources
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Barscherm.resources
 C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Keukenscherm.resources
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.btn_BarVoorraad.resources
+C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.List_Keukenvoorraadscherm.resources

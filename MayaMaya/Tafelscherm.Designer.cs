@@ -48,6 +48,7 @@
             this.Btn_Tafel5 = new System.Windows.Forms.Button();
             this.Btn_Tafel4 = new System.Windows.Forms.Button();
             this.Btn_Tafel10 = new System.Windows.Forms.Button();
+            this.Lbl_Naam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             this.Btn_LogOut.TabIndex = 86;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -183,10 +185,10 @@
             this.Btn_Tafel1.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel1.Location = new System.Drawing.Point(143, 178);
+            this.Btn_Tafel1.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel1.Location = new System.Drawing.Point(135, 184);
             this.Btn_Tafel1.Name = "Btn_Tafel1";
-            this.Btn_Tafel1.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel1.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel1.TabIndex = 87;
             this.Btn_Tafel1.Text = "Tafel 1";
             this.Btn_Tafel1.UseVisualStyleBackColor = false;
@@ -198,10 +200,10 @@
             this.Btn_Tafel2.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel2.Location = new System.Drawing.Point(468, 178);
+            this.Btn_Tafel2.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel2.Location = new System.Drawing.Point(460, 184);
             this.Btn_Tafel2.Name = "Btn_Tafel2";
-            this.Btn_Tafel2.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel2.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel2.TabIndex = 97;
             this.Btn_Tafel2.Text = "Tafel 2";
             this.Btn_Tafel2.UseVisualStyleBackColor = false;
@@ -213,10 +215,10 @@
             this.Btn_Tafel3.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel3.Location = new System.Drawing.Point(143, 303);
+            this.Btn_Tafel3.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel3.Location = new System.Drawing.Point(135, 309);
             this.Btn_Tafel3.Name = "Btn_Tafel3";
-            this.Btn_Tafel3.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel3.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel3.TabIndex = 98;
             this.Btn_Tafel3.Text = "Tafel 3";
             this.Btn_Tafel3.UseVisualStyleBackColor = false;
@@ -228,10 +230,10 @@
             this.Btn_Tafel9.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel9.Location = new System.Drawing.Point(143, 682);
+            this.Btn_Tafel9.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel9.Location = new System.Drawing.Point(135, 688);
             this.Btn_Tafel9.Name = "Btn_Tafel9";
-            this.Btn_Tafel9.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel9.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel9.TabIndex = 99;
             this.Btn_Tafel9.Text = "Tafel 9";
             this.Btn_Tafel9.UseVisualStyleBackColor = false;
@@ -243,10 +245,10 @@
             this.Btn_Tafel8.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel8.Location = new System.Drawing.Point(468, 555);
+            this.Btn_Tafel8.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel8.Location = new System.Drawing.Point(460, 561);
             this.Btn_Tafel8.Name = "Btn_Tafel8";
-            this.Btn_Tafel8.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel8.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel8.TabIndex = 100;
             this.Btn_Tafel8.Text = "Tafel 8";
             this.Btn_Tafel8.UseVisualStyleBackColor = false;
@@ -258,10 +260,10 @@
             this.Btn_Tafel7.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel7.Location = new System.Drawing.Point(143, 555);
+            this.Btn_Tafel7.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel7.Location = new System.Drawing.Point(135, 561);
             this.Btn_Tafel7.Name = "Btn_Tafel7";
-            this.Btn_Tafel7.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel7.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel7.TabIndex = 101;
             this.Btn_Tafel7.Text = "Tafel 7";
             this.Btn_Tafel7.UseVisualStyleBackColor = false;
@@ -273,10 +275,10 @@
             this.Btn_Tafel6.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel6.Location = new System.Drawing.Point(468, 429);
+            this.Btn_Tafel6.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel6.Location = new System.Drawing.Point(460, 435);
             this.Btn_Tafel6.Name = "Btn_Tafel6";
-            this.Btn_Tafel6.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel6.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel6.TabIndex = 102;
             this.Btn_Tafel6.Text = "Tafel 6";
             this.Btn_Tafel6.UseVisualStyleBackColor = false;
@@ -288,10 +290,10 @@
             this.Btn_Tafel5.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel5.Location = new System.Drawing.Point(143, 429);
+            this.Btn_Tafel5.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel5.Location = new System.Drawing.Point(135, 435);
             this.Btn_Tafel5.Name = "Btn_Tafel5";
-            this.Btn_Tafel5.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel5.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel5.TabIndex = 103;
             this.Btn_Tafel5.Text = "Tafel 5";
             this.Btn_Tafel5.UseVisualStyleBackColor = false;
@@ -303,10 +305,10 @@
             this.Btn_Tafel4.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel4.Location = new System.Drawing.Point(468, 303);
+            this.Btn_Tafel4.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel4.Location = new System.Drawing.Point(460, 309);
             this.Btn_Tafel4.Name = "Btn_Tafel4";
-            this.Btn_Tafel4.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel4.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel4.TabIndex = 104;
             this.Btn_Tafel4.Text = "Tafel 4";
             this.Btn_Tafel4.UseVisualStyleBackColor = false;
@@ -318,14 +320,28 @@
             this.Btn_Tafel10.FlatAppearance.BorderSize = 0;
             this.Btn_Tafel10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Tafel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.Btn_Tafel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Tafel10.Location = new System.Drawing.Point(468, 682);
+            this.Btn_Tafel10.ForeColor = System.Drawing.Color.Lime;
+            this.Btn_Tafel10.Location = new System.Drawing.Point(460, 688);
             this.Btn_Tafel10.Name = "Btn_Tafel10";
-            this.Btn_Tafel10.Size = new System.Drawing.Size(110, 110);
+            this.Btn_Tafel10.Size = new System.Drawing.Size(150, 110);
             this.Btn_Tafel10.TabIndex = 105;
             this.Btn_Tafel10.Text = "Tafel 10";
             this.Btn_Tafel10.UseVisualStyleBackColor = false;
             this.Btn_Tafel10.Click += new System.EventHandler(this.Btn_Tafel10_Click);
+            // 
+            // Lbl_Naam
+            // 
+            this.Lbl_Naam.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Lbl_Naam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Lbl_Naam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Naam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Lbl_Naam.Location = new System.Drawing.Point(327, 64);
+            this.Lbl_Naam.Name = "Lbl_Naam";
+            this.Lbl_Naam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Lbl_Naam.Size = new System.Drawing.Size(220, 20);
+            this.Lbl_Naam.TabIndex = 106;
+            this.Lbl_Naam.Text = "Naam";
+            this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Tafelscherm
             // 
@@ -333,6 +349,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.Btn_Tafel1);
             this.Controls.Add(this.Btn_LogOut);
             this.Controls.Add(this.Btn_Help);
@@ -357,6 +374,7 @@
             this.MaximizeBox = false;
             this.Name = "Tafelscherm";
             this.Text = "Tafels";
+            this.Load += new System.EventHandler(this.Tafelscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -385,5 +403,6 @@
         private System.Windows.Forms.Button Btn_Tafel5;
         private System.Windows.Forms.Button Btn_Tafel4;
         private System.Windows.Forms.Button Btn_Tafel10;
+        private System.Windows.Forms.Label Lbl_Naam;
     }
 }

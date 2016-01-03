@@ -12,9 +12,13 @@ namespace MayaMaya
 {
     public partial class Gereedscherm : Form
     {
+        Methodes MayaMaya;
         public Gereedscherm()
         {
             InitializeComponent();
+            MayaMaya = new Methodes("MayaMaya");
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
@@ -40,9 +44,8 @@ namespace MayaMaya
 
         private void Btn_LogOut_Click(object sender, EventArgs e)
         {
+            MayaMaya.LogUit();
             this.Hide();
-            Inlogscherm scherm = new Inlogscherm();
-            scherm.Show();
         }
 
        
