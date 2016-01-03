@@ -68,8 +68,6 @@ namespace MayaMaya
                         case "Bediening":
                             Tafelscherm tafel = new Tafelscherm();
                             tafel.Show();
-                            Bestellingscherm Bediening = new Bestellingscherm();
-                            Bediening.Show();
                             return;
 
                         case "Keuken":
@@ -308,28 +306,28 @@ namespace MayaMaya
             lijst.SelectedIndex = 0;
         }
 
-        //public void AddMedewerker()
-        //{
-        //    //using (SqlConnection connection = new SqlConnection(connectionString))
-        //    //{
-        //    //    SqlCommand cmd = new SqlCommand("INSERT INTO Data (Name, PhoneNo, Address) VALUES (@Name, @PhoneNo, @Address)");
-        //    //    cmd.CommandType = CommandType.Text;
-        //    //    cmd.Connection = connection;
-        //    //    cmd.Parameters.AddWithValue("@Name", txtName.Text);
-        //    //    cmd.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
-        //    //    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
-        //    //    connection.Open();
-        //    //    cmd.ExecuteNonQuery();
-        //    //}
+        public void AddMedewerker()
+        {
+            //using (SqlConnection connection = new SqlConnection(connectionString))
+            //{
+            //    SqlCommand cmd = new SqlCommand("INSERT INTO Data (Name, PhoneNo, Address) VALUES (@Name, @PhoneNo, @Address)");
+            //    cmd.CommandType = CommandType.Text;
+            //    cmd.Connection = connection;
+            //    cmd.Parameters.AddWithValue("@Name", txtName.Text);
+            //    cmd.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
+            //    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+            //    connection.Open();
+            //    cmd.ExecuteNonQuery();
+            //}
 
-        //    string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
-        //    SqlConnection conn = new SqlConnection(connString);
-        //    conn.Open();
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
 
-        //    SqlCommand cmd = new SqlCommand("INSERT INTO medewerker (medewerker_id, medewerker_naam, medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd) VALUES @medewerker_id, @medewerker_naam, @medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd)", conn);
-        //    cmd.CommandType = CommandType.Text;
-        //    cmd.Connection = conn;
-        //    cmd.Parameters.AddWithValue("@medewerker_naam", "ka");
-        //}
+            SqlCommand cmd = new SqlCommand("INSERT INTO medewerker (medewerker_id, medewerker_naam, medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd) VALUES @medewerker_id, @medewerker_naam, @medewerker_functie, @medewerker_wachtwoord, @medewerker_ingelogd)", conn);
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@medewerker_naam", "");
+        }
     }
 }
