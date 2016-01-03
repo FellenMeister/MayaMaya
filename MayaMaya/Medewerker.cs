@@ -23,7 +23,7 @@ namespace MayaMaya
 
         public override string ToString()
         {
-            return naam;
+            return naam + ", " + functie;
         }
 
     }

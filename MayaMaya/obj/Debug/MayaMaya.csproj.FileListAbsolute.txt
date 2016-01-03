@@ -25,3 +25,17 @@ C:\Users\lesli\Source\Repos\MayaMaya\MayaMaya\obj\Debug\MayaMaya.List_Keukenvoor
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\bin\Debug\MayaMaya.pdb
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csprojResolveAssemblyReference.cache
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Admin.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Barscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.btn_BarVoorraad.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Bestellingscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Gereedscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Inlogscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Keukenscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.List_Keukenvoorraadscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Properties.Resources.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Tafelscherm.resources
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csproj.GenerateResource.Cache

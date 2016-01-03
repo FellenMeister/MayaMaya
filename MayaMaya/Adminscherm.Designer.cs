@@ -52,6 +52,7 @@
             this.Btn_Toevoegen = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Lbl_naam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.Btn_LogOut.TabIndex = 68;
             this.Btn_LogOut.Text = "Log Out";
             this.Btn_LogOut.UseVisualStyleBackColor = false;
+            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Btn_Help
             // 
@@ -333,12 +335,27 @@
             this.label7.TabIndex = 88;
             this.label7.Text = "Account toevoegen";
             // 
+            // Lbl_naam
+            // 
+            this.Lbl_naam.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Lbl_naam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Lbl_naam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_naam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Lbl_naam.Location = new System.Drawing.Point(836, 59);
+            this.Lbl_naam.Name = "Lbl_naam";
+            this.Lbl_naam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Lbl_naam.Size = new System.Drawing.Size(220, 20);
+            this.Lbl_naam.TabIndex = 89;
+            this.Lbl_naam.Text = "Naam";
+            this.Lbl_naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
+            this.Controls.Add(this.Lbl_naam);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Toevoegen);
@@ -367,6 +384,7 @@
             this.MaximizeBox = false;
             this.Name = "Admin";
             this.Text = "Adminscherm";
+            this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -399,5 +417,6 @@
         private System.Windows.Forms.Button Btn_Toevoegen;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label Lbl_naam;
     }
 }
