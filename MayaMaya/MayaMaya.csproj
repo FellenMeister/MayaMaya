@@ -126,6 +126,9 @@
     <EmbeddedResource Include="Adminscherm.resx">
       <DependentUpon>Adminscherm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Afrekenscherm.resx">
+      <DependentUpon>Afrekenscherm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Barscherm.resx">
       <DependentUpon>Barscherm.cs</DependentUpon>
     </EmbeddedResource>
