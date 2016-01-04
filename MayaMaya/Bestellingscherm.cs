@@ -13,20 +13,15 @@ namespace MayaMaya
     public partial class Bestellingscherm : Form
     {
         Methodes MayaMaya;
-        Tafelscherm tafel;
         bool eten = true;
         public Bestellingscherm()
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");
-            tafel = new Tafelscherm();
-            int nr = tafel.tafelnummer;
             string naam = MayaMaya.Naam();
             Lbl_Naam.Text = naam;
-            ////lbl_Tafelnr.Text = MayaMaya.Tafelnummer(nr);
-            
+            lbl_Tafelnr.Text = MayaMaya.Tafelnaam();
 
-           
         }
 
         private void Bestelling_Load(object sender, EventArgs e)

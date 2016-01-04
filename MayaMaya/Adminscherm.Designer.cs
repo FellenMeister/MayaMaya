@@ -41,7 +41,7 @@
             this.List_Medewerkers = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAddnaam = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtWachtwoord = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.RBtn_Manager = new System.Windows.Forms.RadioButton();
@@ -187,12 +187,14 @@
             // 
             this.List_Medewerkers.AllowDrop = true;
             this.List_Medewerkers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Medewerkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.List_Medewerkers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Medewerkers.FormattingEnabled = true;
+            this.List_Medewerkers.ItemHeight = 31;
             this.List_Medewerkers.Location = new System.Drawing.Point(36, 135);
             this.List_Medewerkers.MultiColumn = true;
             this.List_Medewerkers.Name = "List_Medewerkers";
-            this.List_Medewerkers.Size = new System.Drawing.Size(549, 420);
+            this.List_Medewerkers.Size = new System.Drawing.Size(549, 407);
             this.List_Medewerkers.TabIndex = 74;
             // 
             // label1
@@ -213,12 +215,13 @@
             this.txtAddnaam.TabIndex = 76;
             this.txtAddnaam.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtWachtwoord
             // 
-            this.textBox2.Location = new System.Drawing.Point(836, 332);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(316, 20);
-            this.textBox2.TabIndex = 78;
+            this.txtWachtwoord.Location = new System.Drawing.Point(836, 332);
+            this.txtWachtwoord.Name = "txtWachtwoord";
+            this.txtWachtwoord.Size = new System.Drawing.Size(316, 20);
+            this.txtWachtwoord.TabIndex = 78;
+            this.txtWachtwoord.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -301,6 +304,7 @@
             this.Btn_Verwijderen.TabIndex = 84;
             this.Btn_Verwijderen.Text = "Verwijder";
             this.Btn_Verwijderen.UseVisualStyleBackColor = false;
+            this.Btn_Verwijderen.Click += new System.EventHandler(this.Btn_Verwijderen_Click);
             // 
             // Btn_Toevoegen
             // 
@@ -315,6 +319,7 @@
             this.Btn_Toevoegen.TabIndex = 85;
             this.Btn_Toevoegen.Text = "Toevoegen";
             this.Btn_Toevoegen.UseVisualStyleBackColor = false;
+            this.Btn_Toevoegen.Click += new System.EventHandler(this.Btn_Toevoegen_Click);
             // 
             // label6
             // 
@@ -366,7 +371,7 @@
             this.Controls.Add(this.RBtn_Bediening);
             this.Controls.Add(this.RBtn_Manager);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtWachtwoord);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAddnaam);
             this.Controls.Add(this.label1);
@@ -407,7 +412,7 @@
         public System.Windows.Forms.ListBox List_Medewerkers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAddnaam;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtWachtwoord;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton RBtn_Manager;

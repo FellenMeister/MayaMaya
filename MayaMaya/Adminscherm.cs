@@ -13,6 +13,8 @@ namespace MayaMaya
     public partial class Admin : Form
     {
         Methodes MayaMaya;
+
+        string functie;
         public Admin()
         {
             InitializeComponent();
@@ -36,6 +38,35 @@ namespace MayaMaya
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_Verwijderen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Toevoegen_Click(object sender, EventArgs e)
+        {
+            if (RBtn_Manager.Checked)
+            {
+                functie = "Manager";
+            }
+            else if(RBtn_Keuken.Checked)
+            {
+                functie = "Keuken";
+            }
+            else if (RBtn_Bediening.Checked)
+            {
+                functie = "Bediening";
+            }
+            else if (RBtn_Bar.Checked)
+            {
+                functie = "Bar";
+            }
+
+            MayaMaya.AddMedewerker(List_Medewerkers, txtAddnaam, txtWachtwoord, functie);
+            MayaMaya.LeesMedewerkers();
+            MayaMaya.ToonMedewerker(List_Medewerkers);
         }
     }   
 }
