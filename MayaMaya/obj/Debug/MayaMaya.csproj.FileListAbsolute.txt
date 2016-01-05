@@ -39,3 +39,6 @@ C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.List_Keu
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Properties.Resources.resources
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Tafelscherm.resources
 C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csproj.GenerateResource.Cache
+C:\Users\lesli\Source\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
+C:\Users\lesli\Source\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
+C:\Users\lesli\Source\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb

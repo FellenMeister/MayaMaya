@@ -46,13 +46,16 @@
             this.Btn_Bezet = new System.Windows.Forms.Button();
             this.Btn_Voegtoe = new System.Windows.Forms.Button();
             this.Btn_Afrekenen = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Txt_Opmerking = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.List_Bestelling = new System.Windows.Forms.ListView();
+            this.lbl_Tafelnr = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtAddnaam = new System.Windows.Forms.TextBox();
+            this.Txt_fooi = new System.Windows.Forms.TextBox();
+            this.Btn_Reserveren = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -258,7 +261,7 @@
             this.Btn_Bezet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Bezet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Bezet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Bezet.Location = new System.Drawing.Point(474, 185);
+            this.Btn_Bezet.Location = new System.Drawing.Point(474, 244);
             this.Btn_Bezet.Name = "Btn_Bezet";
             this.Btn_Bezet.Size = new System.Drawing.Size(150, 45);
             this.Btn_Bezet.TabIndex = 90;
@@ -272,7 +275,7 @@
             this.Btn_Voegtoe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Voegtoe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Voegtoe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Voegtoe.Location = new System.Drawing.Point(474, 383);
+            this.Btn_Voegtoe.Location = new System.Drawing.Point(474, 443);
             this.Btn_Voegtoe.Name = "Btn_Voegtoe";
             this.Btn_Voegtoe.Size = new System.Drawing.Size(150, 45);
             this.Btn_Voegtoe.TabIndex = 90;
@@ -293,29 +296,13 @@
             this.Btn_Afrekenen.Text = "Afrekenen";
             this.Btn_Afrekenen.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // Txt_Opmerking
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 185);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 45);
-            this.textBox1.TabIndex = 99;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(171, 246);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(453, 120);
-            this.textBox2.TabIndex = 99;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(171, 383);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(273, 45);
-            this.textBox3.TabIndex = 99;
+            this.Txt_Opmerking.Location = new System.Drawing.Point(171, 306);
+            this.Txt_Opmerking.Multiline = true;
+            this.Txt_Opmerking.Name = "Txt_Opmerking";
+            this.Txt_Opmerking.Size = new System.Drawing.Size(453, 120);
+            this.Txt_Opmerking.TabIndex = 99;
             // 
             // label4
             // 
@@ -331,7 +318,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 263);
+            this.label1.Location = new System.Drawing.Point(70, 323);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 100;
@@ -341,32 +328,89 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(121, 397);
+            this.label5.Location = new System.Drawing.Point(121, 457);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 100;
             this.label5.Text = "Fooi";
             // 
-            // listView1
+            // List_Bestelling
             // 
-            this.listView1.Location = new System.Drawing.Point(171, 451);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(453, 243);
-            this.listView1.TabIndex = 101;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.List_Bestelling.Location = new System.Drawing.Point(171, 511);
+            this.List_Bestelling.Name = "List_Bestelling";
+            this.List_Bestelling.Size = new System.Drawing.Size(453, 177);
+            this.List_Bestelling.TabIndex = 101;
+            this.List_Bestelling.UseCompatibleStateImageBehavior = false;
+            // 
+            // lbl_Tafelnr
+            // 
+            this.lbl_Tafelnr.AutoSize = true;
+            this.lbl_Tafelnr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.lbl_Tafelnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.lbl_Tafelnr.Location = new System.Drawing.Point(185, 42);
+            this.lbl_Tafelnr.Name = "lbl_Tafelnr";
+            this.lbl_Tafelnr.Size = new System.Drawing.Size(79, 26);
+            this.lbl_Tafelnr.TabIndex = 102;
+            this.lbl_Tafelnr.Text = "tafelnr";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.label6.Location = new System.Drawing.Point(327, 64);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label6.Size = new System.Drawing.Size(220, 20);
+            this.label6.TabIndex = 103;
+            this.label6.Text = "Naam";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtAddnaam
+            // 
+            this.txtAddnaam.Location = new System.Drawing.Point(171, 199);
+            this.txtAddnaam.Name = "txtAddnaam";
+            this.txtAddnaam.Size = new System.Drawing.Size(297, 20);
+            this.txtAddnaam.TabIndex = 104;
+            // 
+            // Txt_fooi
+            // 
+            this.Txt_fooi.Location = new System.Drawing.Point(171, 457);
+            this.Txt_fooi.Name = "Txt_fooi";
+            this.Txt_fooi.Size = new System.Drawing.Size(297, 20);
+            this.Txt_fooi.TabIndex = 105;
+            // 
+            // Btn_Reserveren
+            // 
+            this.Btn_Reserveren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Reserveren.FlatAppearance.BorderSize = 0;
+            this.Btn_Reserveren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Reserveren.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Reserveren.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_Reserveren.Location = new System.Drawing.Point(474, 185);
+            this.Btn_Reserveren.Name = "Btn_Reserveren";
+            this.Btn_Reserveren.Size = new System.Drawing.Size(150, 45);
+            this.Btn_Reserveren.TabIndex = 106;
+            this.Btn_Reserveren.Text = "Reserveren";
+            this.Btn_Reserveren.UseVisualStyleBackColor = false;
             // 
             // Afrekenscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 741);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.Btn_Reserveren);
+            this.Controls.Add(this.Txt_fooi);
+            this.Controls.Add(this.txtAddnaam);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_Tafelnr);
+            this.Controls.Add(this.List_Bestelling);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txt_Opmerking);
             this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.Btn_Afrekenen);
             this.Controls.Add(this.Btn_Voegtoe);
@@ -384,6 +428,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "Afrekenscherm";
             this.Text = "Afrekenscherm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -412,13 +457,15 @@
         private System.Windows.Forms.Button Btn_Bezet;
         private System.Windows.Forms.Button Btn_Voegtoe;
         private System.Windows.Forms.Button Btn_Afrekenen;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Txt_Opmerking;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListView listView1;
-
+        private System.Windows.Forms.ListView List_Bestelling;
+        private System.Windows.Forms.Label lbl_Tafelnr;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtAddnaam;
+        private System.Windows.Forms.TextBox Txt_fooi;
+        private System.Windows.Forms.Button Btn_Reserveren;
     }
 }
