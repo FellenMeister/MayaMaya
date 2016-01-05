@@ -175,7 +175,6 @@ namespace MayaMaya
         public void SelecteerTafel(int tafelnummer, string naam)
         {
             int medewerker_id = 0;
-            string tafelnr = tafelnummer.ToString();
 
             string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
             SqlConnection conn = new SqlConnection(connString);
@@ -190,10 +189,9 @@ namespace MayaMaya
             }
             conn.Close();
             conn.Open();
-            command = new SqlCommand("insert into bestelling (medewerker_id, tafel_nummer, status) values (@mId, @tflNr, @status); update nieuwetafel set tafel_nummer = @tflNr, tafel_naam = @tflNm where id = 1 ", conn);
+            command = new SqlCommand("insert into bestelling (medewerker_id, tafel_nummer, status) values (@mId, @tflNr, @status) ", conn);
             command.Parameters.Add("@mId", SqlDbType.Int).Value = medewerker_id;
             command.Parameters.Add("@tflNr", SqlDbType.Int).Value = tafelnummer;
-            command.Parameters.Add("@tflNm", SqlDbType.NVarChar).Value = "Tafel " + tafelnr;
             command.Parameters.Add("@status", SqlDbType.NVarChar).Value = "in progress";
             reader = command.ExecuteReader();
             conn.Close();
@@ -236,7 +234,7 @@ namespace MayaMaya
                     int id = (int)reader["item_id"];
                     int categorieId = (int)reader["categorie_id"];
                     string naam = (string)reader["item_naam"];
-                    float prijs = (float)(double)reader["item_prijs"];
+                    decimal prijs = (decimal)(decimal)reader["item_prijs"];
                     decimal btw = (decimal)reader["item_btw"];
 
                     Item item = new Item(id, categorieId, naam, prijs, btw);
@@ -258,7 +256,7 @@ namespace MayaMaya
                     int id = (int)reader["item_id"];
                     int categorieId = (int)reader["categorie_id"];
                     string naam = (string)reader["item_naam"];
-                    float prijs = (float)(double)reader["item_prijs"];
+                    decimal prijs = (decimal)reader["item_prijs"];
                     decimal btw = (decimal)reader["item_btw"];
 
                     Item item = new Item(id, categorieId, naam, prijs, btw);
@@ -282,7 +280,7 @@ namespace MayaMaya
                 int id = (int)reader["item_id"];
                 int categorieId = (int)reader["categorie_id"];
                 string naam = (string)reader["item_naam"];
-                float prijs = (float)(double)reader["item_prijs"];
+                decimal prijs = (decimal)reader["item_prijs"];
                 decimal btw = (decimal)reader["item_btw"];
 
                 Item item = new Item(id, categorieId, naam, prijs, btw);
@@ -297,7 +295,7 @@ namespace MayaMaya
             {
                 lijst.Items.Add(product);
             }
-            lijst.SelectedIndex = 0;
+            lijst.SelectedIndex = -1;
         }
 
         public void ToonDrinken(ListBox lijst)
@@ -306,55 +304,67 @@ namespace MayaMaya
             {
                 lijst.Items.Add(product);
             }
-            lijst.SelectedIndex = 0;
+            lijst.SelectedIndex = -1;
         }
 
         // Bestelling
         //afmaken
-        public void NeemOp(int item, bool eten)
+        public void NeemOp(int tafelnr, int item, bool eten)
         {
-            int bestellingId = 0,  tafelnr = 0;
+            int bestellingId = 0, item_id = 0;
             string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
             SqlConnection conn = new SqlConnection(connString);
-            conn.Open();
+            SqlCommand command;
+            SqlDataReader reader;
 
-            SqlCommand command = new SqlCommand("Select tafel_nummer from nieuwetafel", conn);
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                tafelnr = (int)reader["tafel_nummer"];
-            }
-            conn.Close();
             conn.Open();
 
             if (eten)
             {
                 if (nu > tijd)
                 {
-                    command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel; Select item_id From items Where item_id = @itemnr ", conn);
+                    // ...
+                    command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel", conn);
                     command.Parameters.Add("@tafel", SqlDbType.Int).Value = tafelnr;
-                    command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 10;
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
                         bestellingId = (int)reader["bestelling_id"];
-                        int item_id = (int)reader["item_id"];
-                        BestellingItem bestelitem = new BestellingItem(bestellingId, item_id);
+                    }
+                    conn.Close();
+                    conn.Open();
+                    command = new SqlCommand("Select item_id, item_naam From items where item_id = @itemnr", conn);
+                    command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 10;
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        item_id = (int)reader["item_id"];
+                        string naam = (string)reader["item_naam"];
+                        BestellingItem bestelitem = new BestellingItem(bestellingId, item_id, naam);
                         bestelling.Add(bestelitem);
                     }
                     conn.Close();
                 }
                 else
                 {
-                    command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel; Select item_id From items where item_id = @itemnr", conn);
-                    reader = command.ExecuteReader();
+                    // ...
+                    command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel", conn);
                     command.Parameters.Add("@tafel", SqlDbType.Int).Value = tafelnr;
-                    command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 1;
+                    reader = command.ExecuteReader();
                     while (reader.Read())
                     {
                         bestellingId = (int)reader["bestelling_id"];
-                       int item_id = (int)reader["item_id"];
-                        BestellingItem bestelitem = new BestellingItem(bestellingId, item_id);
+                    }
+                    conn.Close();
+                    conn.Open();
+                    command = new SqlCommand("Select item_id, item_naam From items where item_id = @itemnr", conn);
+                    command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 1;
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        item_id = (int)reader["item_id"];
+                        string naam = (string)reader["item_naam"];
+                        BestellingItem bestelitem = new BestellingItem(bestellingId, item_id, naam);
                         bestelling.Add(bestelitem);
                     }
                     conn.Close();
@@ -362,30 +372,73 @@ namespace MayaMaya
             }
             else
             {
-                command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel; select item_id from items where item_id = @itemnr", conn);
+                // ...
+                command = new SqlCommand("Select bestelling_id From bestelling where tafel_nummer = @tafel", conn);
+                command.Parameters.Add("@tafel", SqlDbType.Int).Value = tafelnr;
                 reader = command.ExecuteReader();
-                command.Parameters.Add("@tafel", SqlDbType.Int).Value = 1;
-                command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 21;
                 while (reader.Read())
                 {
                     bestellingId = (int)reader["bestelling_id"];
-                    int item_id = (int)reader["item_id"];
-                    BestellingItem bestelitem = new BestellingItem(bestellingId, item_id);
+                }
+                conn.Close();
+                conn.Open();
+                command = new SqlCommand("Select item_id, item_naam From items where item_id = @itemnr", conn);
+                command.Parameters.Add("@itemnr", SqlDbType.Int).Value = item + 21;
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    item_id = (int)reader["item_id"];
+                    string naam = (string)reader["item_naam"];
+                    BestellingItem bestelitem = new BestellingItem(bestellingId, item_id, naam);
                     bestelling.Add(bestelitem);
                 }
                 conn.Close();
             }
-
         }
-  
 
         public void ToonOpname(ListBox lijst)
         {
+            lijst.Items.Clear();
             foreach (BestellingItem item in bestelling)
             {
-                lijst.Items.Add(item);
+                lijst.Items.Add(item.ToString());
             }
-            lijst.SelectedIndex = 0;
+            lijst.SelectedIndex = -1;
+        }
+
+        public void verwijderOpname(int nr)
+        {
+            bestelling.Remove(bestelling[nr]);
+        }
+
+        public void PlaatsBestelling(ListBox lijst)
+        {
+            foreach (BestellingItem item in bestelling)
+            {
+                int iId = item.itemId;
+                int bId = item.bestellingId;
+                string naam = item.item;
+
+                string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+                SqlConnection conn = new SqlConnection(connString);
+                // Bestelling updaten met tijd!
+                //conn.Open();
+                //SqlCommand command = new SqlCommand("INSERT INTO bestelling_items (bestelling_id, item_id, item_naam) VALUES (@bId, @iId, @iNaam)", conn);
+                //command.Parameters.AddWithValue("@bId", SqlDbType.Int).Value = bId;
+                //command.Parameters.AddWithValue("@iId", SqlDbType.Int).Value = iId;
+                //command.Parameters.AddWithValue("@iNaam", SqlDbType.NVarChar).Value = naam;
+                //SqlDataReader reader = command.ExecuteReader();
+                //conn.Close();
+
+                conn.Open();
+                SqlCommand command = new SqlCommand("INSERT INTO bestelling_items (bestelling_id, item_id, item_naam) VALUES (@bId, @iId, @iNaam)", conn);
+                command.Parameters.AddWithValue("@bId", SqlDbType.Int).Value = bId;
+                command.Parameters.AddWithValue("@iId", SqlDbType.Int).Value = iId;
+                command.Parameters.AddWithValue("@iNaam", SqlDbType.NVarChar).Value = naam;
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+            }
+            lijst.Items.Clear();
         }
         // Keuken
 
@@ -426,30 +479,17 @@ namespace MayaMaya
             {
                 lijst.Items.Add(medewerker);
             }
-            lijst.SelectedIndex = 0;
+            lijst.SelectedIndex = -1;
         }
 
         public void AddMedewerker(ListBox Lijst, TextBox naam, TextBox wachtwoord, string functie)
         {
-            //using (SqlConnection connection = new SqlConnection(connectionString))
-            //{
-            //    SqlCommand cmd = new SqlCommand("INSERT INTO Data (Name, PhoneNo, Address) VALUES (@Name, @PhoneNo, @Address)");
-            //    cmd.CommandType = CommandType.Text;
-            //    cmd.Connection = connection;
-            //    cmd.Parameters.AddWithValue("@Name", txtName.Text);
-            //    cmd.Parameters.AddWithValue("@PhoneNo", txtPhone.Text);
-            //    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
-            //    connection.Open();
-            //    cmd.ExecuteNonQuery();
-            //}
             int ww = int.Parse(wachtwoord.Text);
             string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
             SqlConnection conn = new SqlConnection(connString);
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("INSERT INTO medewerker (medewerker_naam, medewerker_functie, medewerker_wachtwoord, medewerker_ingelogd) VALUES (@medewerker_naam, @medewerker_functie, @medewerker_wachtwoord, @medewerker_ingelogd)", conn);
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = conn;
             cmd.Parameters.AddWithValue("@medewerker_naam", SqlDbType.NVarChar).Value = naam.Text;
             cmd.Parameters.AddWithValue("@medewerker_functie", SqlDbType.NVarChar).Value = functie;
             cmd.Parameters.AddWithValue("@medewerker_Wachtwoord", SqlDbType.Int).Value = ww;
@@ -457,6 +497,18 @@ namespace MayaMaya
             SqlDataReader reader = cmd.ExecuteReader();
             conn.Close();
             
+        }
+        
+        public void VerwijderMedewerker(int nummer)
+        {
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("DELETE * FROM medewerker WHERE medewerker_id = @nummer", conn);
+            cmd.Parameters.AddWithValue("@nummer", SqlDbType.Int).Value = nummer;
+            SqlDataReader reader = cmd.ExecuteReader();
+            conn.Close();
         }
     }
 }

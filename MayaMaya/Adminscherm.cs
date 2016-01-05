@@ -42,7 +42,8 @@ namespace MayaMaya
 
         private void Btn_Verwijderen_Click(object sender, EventArgs e)
         {
-
+            int nummer = List_Medewerkers.SelectedIndex + 1;
+            MayaMaya.VerwijderMedewerker(nummer);
         }
 
         private void Btn_Toevoegen_Click(object sender, EventArgs e)
@@ -63,10 +64,15 @@ namespace MayaMaya
             {
                 functie = "Bar";
             }
-
             MayaMaya.AddMedewerker(List_Medewerkers, txtAddnaam, txtWachtwoord, functie);
+            List_Medewerkers.Items.Clear();
             MayaMaya.LeesMedewerkers();
             MayaMaya.ToonMedewerker(List_Medewerkers);
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Account verwijderen:\n Selecteer een account en klik op de knop 'Verwijderen'.\n\n Account toevoegen:\n Vul de gegevens in in de daarvoor bestemde tesktvakken en klik op de knop 'Toevoegen'.");
         }
     }   
 }

@@ -39,10 +39,9 @@ namespace MayaMaya
 
         private void Btn_Tafel1_Click(object sender, EventArgs e)
         {
-
             tafelnummer = 1; this.Hide();
             MayaMaya.SelecteerTafel(1, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(1, "Tafel 1");
             Bediening.Show();
 
         }
@@ -51,7 +50,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(2, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(2, "Tafel 2");
             Bediening.Show();
             tafelnummer = 2;
         }
@@ -60,7 +59,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(3, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(3, "Tafel 3");
             Bediening.Show();
             tafelnummer = 3;
         }
@@ -69,7 +68,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(4, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(4, "Tafel 4");
             Bediening.Show();
             tafelnummer = 4;
         }
@@ -78,7 +77,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(5, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(5, "Tafel 5");
             Bediening.Show();
             tafelnummer = 5;
         }
@@ -87,7 +86,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(6, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(6, "Tafel 6");
             Bediening.Show();
             tafelnummer = 6;
         }
@@ -96,7 +95,7 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(7, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(7, "Tafel 7");
             Bediening.Show();
             tafelnummer = 7;
         }
@@ -105,27 +104,24 @@ namespace MayaMaya
         {
             this.Hide();
             MayaMaya.SelecteerTafel(8, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(8, "Tafel 8");
             Bediening.Show();
-            tafelnummer = 8;
         }
 
         private void Btn_Tafel9_Click(object sender, EventArgs e)
         {
             this.Hide();
             MayaMaya.SelecteerTafel(9, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(9, "Tafel 9");
             Bediening.Show();
-            tafelnummer = 9;
         }
 
         private void Btn_Tafel10_Click(object sender, EventArgs e)
         {
             this.Hide();
             MayaMaya.SelecteerTafel(10, Lbl_Naam.Text);
-            Bestellingscherm Bediening = new Bestellingscherm();
+            Bestellingscherm Bediening = new Bestellingscherm(10, "Tafel 10");
             Bediening.Show();
-            tafelnummer =10;
         }
 
         private void Btn_LogOut_Click(object sender, EventArgs e)

@@ -12,9 +12,16 @@ namespace MayaMaya
 {
     public partial class Afrekenscherm : Form
     {
-        public Afrekenscherm()
+        private int tafelId;
+        private string naam;
+        Methodes MayaMaya;
+        public Afrekenscherm(int tafelId, string naam)
         {
             InitializeComponent();
+            this.tafelId = tafelId;
+            MayaMaya = new Methodes("MayaMaya");
+            this.naam = naam;
+            lbl_Tafelnr.Text = naam;
         }
     }
 }

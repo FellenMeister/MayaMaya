@@ -12,15 +12,22 @@ namespace MayaMaya
 {
     public partial class Bestellingscherm : Form
     {
+        private int tafelId;
+        private string tafel;
         Methodes MayaMaya;
         bool eten = true;
-        public Bestellingscherm()
+        
+
+        public Bestellingscherm(int tafelId, string tafel)
         {
             InitializeComponent();
+
+            this.tafelId = tafelId;
             MayaMaya = new Methodes("MayaMaya");
+            this.tafel = tafel;
+            lbl_Tafelnr.Text = tafel;
             string naam = MayaMaya.Naam();
-            Lbl_Naam.Text = naam;
-            lbl_Tafelnr.Text = MayaMaya.Tafelnaam();
+            Lbl_naam.Text = naam;
 
         }
 
@@ -34,7 +41,8 @@ namespace MayaMaya
         private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)
         {
             int item = List_Kaart.SelectedIndex;
-            MayaMaya.NeemOp(item, eten);
+            MayaMaya.NeemOp(tafelId, item, eten);
+            MayaMaya.ToonOpname(List_Bestelling);
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
@@ -47,14 +55,14 @@ namespace MayaMaya
         private void Btn_Rekening_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Afrekenscherm scherm = new Afrekenscherm();
+            Afrekenscherm scherm = new Afrekenscherm(tafelId, tafel);
             scherm.Show();
         }
 
         private void Btn_Gereed_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Gereedscherm scherm = new Gereedscherm();
+            Gereedscherm scherm = new Gereedscherm(tafelId, tafel);
             scherm.Show();
         }
         
@@ -80,6 +88,18 @@ namespace MayaMaya
         {
             MayaMaya.LogUit();
             this.Hide();
+        }
+
+        private void List_Bestelling_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int item = List_Bestelling.SelectedIndex;
+            MayaMaya.verwijderOpname(item);
+            MayaMaya.ToonOpname(List_Bestelling);
+        }
+
+        private void Btn_Plaats_Click(object sender, EventArgs e)
+        {
+            MayaMaya.PlaatsBestelling(List_Bestelling);
         }
     }
 }

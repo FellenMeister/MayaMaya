@@ -42,3 +42,4 @@ C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.csproj.G
 C:\Users\lesli\Source\MayaMaya\MayaMaya\bin\Debug\MayaMaya.exe.config
 C:\Users\lesli\Source\MayaMaya\MayaMaya\obj\Debug\MayaMaya.exe
 C:\Users\lesli\Source\MayaMaya\MayaMaya\obj\Debug\MayaMaya.pdb
+C:\Users\Remlex\Documents\gitthuyb\MayaMaya\MayaMaya\obj\Debug\MayaMaya.Afrekenscherm.resources

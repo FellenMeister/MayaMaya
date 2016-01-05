@@ -12,13 +12,16 @@ namespace MayaMaya
 {
     public partial class Gereedscherm : Form
     {
+        private int tafelId;
+        private string naam;
         Methodes MayaMaya;
-        public Gereedscherm()
+        public Gereedscherm(int tafelId, string naam)
         {
             InitializeComponent();
+            this.tafelId = tafelId;
             MayaMaya = new Methodes("MayaMaya");
-            string naam = MayaMaya.Naam();
-            Lbl_Naam.Text = naam;
+            this.naam = naam;
+            lbl_Tafelnr.Text = naam;
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
@@ -31,14 +34,14 @@ namespace MayaMaya
         private void Btn_Bestelling_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Bestellingscherm scherm = new Bestellingscherm();
+            Bestellingscherm scherm = new Bestellingscherm(tafelId, naam);
             scherm.Show();
         }
 
         private void Btn_Rekening_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Afrekenscherm scherm = new Afrekenscherm();
+            Afrekenscherm scherm = new Afrekenscherm(tafelId, naam);
             scherm.Show();
         }
 

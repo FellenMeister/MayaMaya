@@ -10,10 +10,10 @@ namespace MayaMaya
     {
         int id, categorieId;
         decimal btw;
-        float prijs;
+        decimal prijs;
         string naam;
 
-        public Item(int id, int categorieId, string naam, float prijs, decimal btw)
+        public Item(int id, int categorieId, string naam, decimal prijs, decimal btw)
         {
             this.id = id;
             this.categorieId = categorieId;
