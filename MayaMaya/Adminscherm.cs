@@ -35,15 +35,13 @@ namespace MayaMaya
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Verwijderen_Click(object sender, EventArgs e)
         {
             int nummer = List_Medewerkers.SelectedIndex + 1;
             MayaMaya.VerwijderMedewerker(nummer);
+            List_Medewerkers.Items.Clear();
+            MayaMaya.LeesMedewerkers();
+            MayaMaya.ToonMedewerker(List_Medewerkers);
         }
 
         private void Btn_Toevoegen_Click(object sender, EventArgs e)

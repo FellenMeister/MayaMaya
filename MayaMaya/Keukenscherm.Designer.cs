@@ -32,7 +32,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Btn_Gereed = new System.Windows.Forms.Button();
-            this.List_Bestelling = new System.Windows.Forms.ListBox();
+            this.List_Tafels = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@
             this.Btn_Voorraad = new System.Windows.Forms.Button();
             this.List_Gereed = new System.Windows.Forms.ListBox();
             this.Lbl_Naam = new System.Windows.Forms.Label();
+            this.List_Bestelling = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,11 +65,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 112);
+            this.label6.Location = new System.Drawing.Point(439, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 20);
+            this.label6.Size = new System.Drawing.Size(93, 20);
             this.label6.TabIndex = 110;
-            this.label6.Text = "Bestellingen:";
+            this.label6.Text = "Bestelling:";
             // 
             // Btn_Gereed
             // 
@@ -76,24 +78,26 @@
             this.Btn_Gereed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Gereed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Gereed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Gereed.Location = new System.Drawing.Point(602, 561);
+            this.Btn_Gereed.Location = new System.Drawing.Point(628, 561);
             this.Btn_Gereed.Name = "Btn_Gereed";
             this.Btn_Gereed.Size = new System.Drawing.Size(164, 40);
             this.Btn_Gereed.TabIndex = 108;
             this.Btn_Gereed.Text = "Gereed";
             this.Btn_Gereed.UseVisualStyleBackColor = false;
+            this.Btn_Gereed.Click += new System.EventHandler(this.Btn_Gereed_Click);
             // 
-            // List_Bestelling
+            // List_Tafels
             // 
-            this.List_Bestelling.AllowDrop = true;
-            this.List_Bestelling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.List_Bestelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.List_Bestelling.FormattingEnabled = true;
-            this.List_Bestelling.Location = new System.Drawing.Point(37, 135);
-            this.List_Bestelling.MultiColumn = true;
-            this.List_Bestelling.Name = "List_Bestelling";
-            this.List_Bestelling.Size = new System.Drawing.Size(729, 420);
-            this.List_Bestelling.TabIndex = 98;
+            this.List_Tafels.AllowDrop = true;
+            this.List_Tafels.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Tafels.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.List_Tafels.FormattingEnabled = true;
+            this.List_Tafels.Location = new System.Drawing.Point(45, 135);
+            this.List_Tafels.MultiColumn = true;
+            this.List_Tafels.Name = "List_Tafels";
+            this.List_Tafels.Size = new System.Drawing.Size(349, 394);
+            this.List_Tafels.TabIndex = 98;
+            this.List_Tafels.SelectedIndexChanged += new System.EventHandler(this.List_Bestelling_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
@@ -189,6 +193,7 @@
             this.Btn_Help.TabIndex = 91;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Admin
             // 
@@ -245,7 +250,7 @@
             this.List_Gereed.Location = new System.Drawing.Point(840, 135);
             this.List_Gereed.MultiColumn = true;
             this.List_Gereed.Name = "List_Gereed";
-            this.List_Gereed.Size = new System.Drawing.Size(349, 420);
+            this.List_Gereed.Size = new System.Drawing.Size(349, 394);
             this.List_Gereed.TabIndex = 113;
             // 
             // Lbl_Naam
@@ -262,19 +267,43 @@
             this.Lbl_Naam.Text = "Naam";
             this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // List_Bestelling
+            // 
+            this.List_Bestelling.AllowDrop = true;
+            this.List_Bestelling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Bestelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.List_Bestelling.FormattingEnabled = true;
+            this.List_Bestelling.Location = new System.Drawing.Point(443, 135);
+            this.List_Bestelling.MultiColumn = true;
+            this.List_Bestelling.Name = "List_Bestelling";
+            this.List_Bestelling.Size = new System.Drawing.Size(349, 394);
+            this.List_Bestelling.TabIndex = 115;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.TabIndex = 116;
+            this.label1.Text = "Tafels:";
+            // 
             // Keukenscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.List_Bestelling);
             this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.List_Gereed);
             this.Controls.Add(this.Btn_Voorraad);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Gereed);
-            this.Controls.Add(this.List_Bestelling);
+            this.Controls.Add(this.List_Tafels);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -287,6 +316,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "Keukenscherm";
             this.Text = "Keukenscherm";
+            this.Load += new System.EventHandler(this.Keukenscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -299,7 +329,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Btn_Gereed;
-        public System.Windows.Forms.ListBox List_Bestelling;
+        public System.Windows.Forms.ListBox List_Tafels;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -312,5 +342,7 @@
         private System.Windows.Forms.Button Btn_Voorraad;
         public System.Windows.Forms.ListBox List_Gereed;
         private System.Windows.Forms.Label Lbl_Naam;
+        public System.Windows.Forms.ListBox List_Bestelling;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -8,16 +8,17 @@ namespace MayaMaya
 {
     class BestellingItem
     {
-        public int bestellingId, itemId;
+        public int bestellingId, categorie_id, itemId;
         public string item;
 
         public BestellingItem()
         { }
 
-        public BestellingItem(int bId, int iId, string item)
+        public BestellingItem(int bId, int catId, int iId, string item)
         {
-            this.bestellingId = bId;
-            this.itemId = iId;
+            bestellingId = bId;
+            categorie_id = catId;
+            itemId = iId;
             this.item = item;
         }
 

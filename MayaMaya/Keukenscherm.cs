@@ -21,16 +21,6 @@ namespace MayaMaya
             Lbl_Naam.Text = naam;
         }
 
-        private void List_Kaart_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_Eten_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Voorraad_Click(object sender, EventArgs e)
         {
 
@@ -40,6 +30,26 @@ namespace MayaMaya
         {
             MayaMaya.LogUit();
             this.Hide();
+        }
+
+        private void Keukenscherm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Gereed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void List_Bestelling_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

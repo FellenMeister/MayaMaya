@@ -214,7 +214,6 @@
             this.txtAddnaam.Name = "txtAddnaam";
             this.txtAddnaam.Size = new System.Drawing.Size(316, 20);
             this.txtAddnaam.TabIndex = 76;
-            this.txtAddnaam.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtWachtwoord
             // 
