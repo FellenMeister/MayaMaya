@@ -106,12 +106,6 @@
     <Compile Include="Keukenvoorraadscherm.Designer.cs">
       <DependentUpon>Keukenvoorraadscherm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Managerscherm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Managerscherm.Designer.cs">
-      <DependentUpon>Managerscherm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Medewerker.cs" />
     <Compile Include="Methodes.cs" />
     <Compile Include="Program.cs" />

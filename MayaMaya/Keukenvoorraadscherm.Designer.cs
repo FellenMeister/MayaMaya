@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class List_Keukenvoorraadscherm
+    partial class Keukenvoorraadscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(List_Keukenvoorraadscherm));
-            this.List_Wijziging = new System.Windows.Forms.ListBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Keukenvoorraadscherm));
             this.Btn_Voorraad = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.List_Voorraad = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,18 +46,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // List_Wijziging
-            // 
-            this.List_Wijziging.AllowDrop = true;
-            this.List_Wijziging.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.List_Wijziging.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.List_Wijziging.FormattingEnabled = true;
-            this.List_Wijziging.Location = new System.Drawing.Point(668, 135);
-            this.List_Wijziging.MultiColumn = true;
-            this.List_Wijziging.Name = "List_Wijziging";
-            this.List_Wijziging.Size = new System.Drawing.Size(557, 420);
-            this.List_Wijziging.TabIndex = 128;
-            // 
             // Btn_Voorraad
             // 
             this.Btn_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
@@ -74,21 +60,11 @@
             this.Btn_Voorraad.Text = "Voorraad";
             this.Btn_Voorraad.UseVisualStyleBackColor = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(664, 112);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 20);
-            this.label7.TabIndex = 126;
-            this.label7.Text = "Laatst gewijzigde voorraad:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 112);
+            this.label6.Location = new System.Drawing.Point(333, 112);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 20);
             this.label6.TabIndex = 125;
@@ -100,10 +76,10 @@
             this.List_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.List_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Voorraad.FormattingEnabled = true;
-            this.List_Voorraad.Location = new System.Drawing.Point(37, 135);
+            this.List_Voorraad.Location = new System.Drawing.Point(337, 135);
             this.List_Voorraad.MultiColumn = true;
             this.List_Voorraad.Name = "List_Voorraad";
-            this.List_Voorraad.Size = new System.Drawing.Size(557, 420);
+            this.List_Voorraad.Size = new System.Drawing.Size(693, 420);
             this.List_Voorraad.TabIndex = 123;
             // 
             // pictureBox2
@@ -253,9 +229,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
             this.Controls.Add(this.Lbl_Naam);
-            this.Controls.Add(this.List_Wijziging);
             this.Controls.Add(this.Btn_Voorraad);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.List_Voorraad);
             this.Controls.Add(this.pictureBox2);
@@ -279,9 +253,7 @@
 
         #endregion
 
-        public System.Windows.Forms.ListBox List_Wijziging;
         private System.Windows.Forms.Button Btn_Voorraad;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.ListBox List_Voorraad;
         private System.Windows.Forms.PictureBox pictureBox2;

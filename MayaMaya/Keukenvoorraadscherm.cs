@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class List_Keukenvoorraadscherm : Form
+    public partial class Keukenvoorraadscherm : Form
     {
         Methodes MayaMaya;
-        public List_Keukenvoorraadscherm()
+        public Keukenvoorraadscherm()
         {
             InitializeComponent();
             MayaMaya = new Methodes("MayaMaya");

@@ -81,10 +81,6 @@ namespace MayaMaya
                         Bar.Show();
                         return;
 
-                    case "Manager":
-                        Managerscherm Manager = new Managerscherm();
-                        Manager.Show();
-                        return;
 
                     default:
                         return;
@@ -223,6 +219,7 @@ namespace MayaMaya
         }
 
         // bediening
+            //Kaart
         public void LeesEten()
         {
             if (nu < tijd)
@@ -312,8 +309,8 @@ namespace MayaMaya
             lijst.SelectedIndex = -1;
         }
 
-        // Bestelling
-        //afmaken
+            // Bestelling
+            //afmaken
         public void NeemOp(int tafelnr, int item, bool eten)
         {
             int bestellingId = 0, item_id = 0, voorraad = 0;
@@ -478,13 +475,75 @@ namespace MayaMaya
             }
             lijst.Items.Clear();
         }
+
+            // Afrekenen
+
+        public void LaadRekening(int tafelId)
+        {
+
+        }
+        public void ReserveerTafel(int tafelId)
+        {
+                string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+                SqlConnection conn = new SqlConnection(connString);
+
+                conn.Open();
+                SqlCommand command = new SqlCommand("update tafel set status = @status where nummer = @tafelnr", conn);
+                command.Parameters.AddWithValue("@tafelnr", SqlDbType.Int).Value = tafelId;
+                command.Parameters.AddWithValue("@status", SqlDbType.NVarChar).Value = "Gereserveerd";
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+
+                conn.Open();
+                command = new SqlCommand("update tafel set naam = @Naam where nummer = @tafelnr", conn);
+                command.Parameters.AddWithValue("@tafelnr", SqlDbType.Int).Value = tafelId;
+                command.Parameters.AddWithValue("@Naam", SqlDbType.NVarChar).Value = naam;
+                reader = command.ExecuteReader();
+                conn.Close();
+        }
+
+        public void BezetTafel(int tafelId, string naam)
+        {
+                string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+                SqlConnection conn = new SqlConnection(connString);
+
+                conn.Open();
+                SqlCommand command = new SqlCommand("update tafel set status = @status where nummer = @tafelnr", conn);
+                command.Parameters.AddWithValue("@tafelnr", SqlDbType.Int).Value = tafelId;
+                command.Parameters.AddWithValue("@status", SqlDbType.NVarChar).Value = "Bezet";
+                SqlDataReader reader = command.ExecuteReader();
+                conn.Close();
+
+                conn.Open();
+                command = new SqlCommand("update tafel set naam = @Naam where nummer = @tafelnr", conn);
+                command.Parameters.AddWithValue("@tafelnr", SqlDbType.Int).Value = tafelId;
+                command.Parameters.AddWithValue("@Naam", SqlDbType.NVarChar).Value = naam;
+                reader = command.ExecuteReader();
+                conn.Close();
+        }
+
+        public void VoegOpmerkingToe(int tafelId, string Opmerking)
+        {
+            string connString = ConfigurationManager.ConnectionStrings["Databasje"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+
+            conn.Open();
+            SqlCommand command = new SqlCommand("update bestelling set opmerking = @opmerking where tafel_nummer = @tafelnr", conn);
+            command.Parameters.AddWithValue("@tafelnr", SqlDbType.Int).Value = tafelId;
+            command.Parameters.AddWithValue("@opmerking", SqlDbType.NVarChar).Value = Opmerking;           
+            SqlDataReader reader = command.ExecuteReader();
+            conn.Close();
+        }
+
+
+        
+
+
+
         // Keuken
 
 
         // Bar
-
-
-        // Manager
 
 
         // Admin

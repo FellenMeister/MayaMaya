@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class btn_BarVoorraad
+    partial class Barvoorraadscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btn_BarVoorraad));
-            this.List_Wijziging = new System.Windows.Forms.ListBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Barvoorraadscherm));
             this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.List_Voorraad = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,21 +40,11 @@
             this.Btn_Bar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Lbl_Naam = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.List_Voorraad = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // List_Wijziging
-            // 
-            this.List_Wijziging.AllowDrop = true;
-            this.List_Wijziging.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.List_Wijziging.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.List_Wijziging.FormattingEnabled = true;
-            this.List_Wijziging.Location = new System.Drawing.Point(668, 135);
-            this.List_Wijziging.MultiColumn = true;
-            this.List_Wijziging.Name = "List_Wijziging";
-            this.List_Wijziging.Size = new System.Drawing.Size(557, 420);
-            this.List_Wijziging.TabIndex = 142;
             // 
             // button3
             // 
@@ -73,38 +59,6 @@
             this.button3.TabIndex = 141;
             this.button3.Text = "Voorraad";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(664, 112);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 20);
-            this.label7.TabIndex = 140;
-            this.label7.Text = "Laatst gewijzigde voorraad:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 112);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 20);
-            this.label6.TabIndex = 139;
-            this.label6.Text = "Voorraad:";
-            // 
-            // List_Voorraad
-            // 
-            this.List_Voorraad.AllowDrop = true;
-            this.List_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.List_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.List_Voorraad.FormattingEnabled = true;
-            this.List_Voorraad.Location = new System.Drawing.Point(37, 135);
-            this.List_Voorraad.MultiColumn = true;
-            this.List_Voorraad.Name = "List_Voorraad";
-            this.List_Voorraad.Size = new System.Drawing.Size(557, 420);
-            this.List_Voorraad.TabIndex = 138;
             // 
             // pictureBox2
             // 
@@ -246,18 +200,38 @@
             this.Lbl_Naam.Text = "Naam";
             this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btn_BarVoorraad
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(284, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 20);
+            this.label6.TabIndex = 145;
+            this.label6.Text = "Voorraad:";
+            // 
+            // List_Voorraad
+            // 
+            this.List_Voorraad.AllowDrop = true;
+            this.List_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.List_Voorraad.FormattingEnabled = true;
+            this.List_Voorraad.Location = new System.Drawing.Point(288, 162);
+            this.List_Voorraad.MultiColumn = true;
+            this.List_Voorraad.Name = "List_Voorraad";
+            this.List_Voorraad.Size = new System.Drawing.Size(693, 420);
+            this.List_Voorraad.TabIndex = 144;
+            // 
+            // Barvoorraadscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
-            this.Controls.Add(this.Lbl_Naam);
-            this.Controls.Add(this.List_Wijziging);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.List_Voorraad);
+            this.Controls.Add(this.Lbl_Naam);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -268,7 +242,7 @@
             this.Controls.Add(this.Btn_Bar);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Name = "btn_BarVoorraad";
+            this.Name = "Barvoorraadscherm";
             this.Text = "Barvoorraadscherm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -279,11 +253,7 @@
 
         #endregion
 
-        public System.Windows.Forms.ListBox List_Wijziging;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.ListBox List_Voorraad;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -294,5 +264,7 @@
         private System.Windows.Forms.Button Btn_Bar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Lbl_Naam;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.ListBox List_Voorraad;
     }
 }
