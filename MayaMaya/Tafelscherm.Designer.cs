@@ -81,6 +81,7 @@
             this.Btn_Help.TabIndex = 84;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Tafels
             // 

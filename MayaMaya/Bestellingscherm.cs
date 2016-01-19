@@ -14,7 +14,7 @@ namespace MayaMaya
     {
         private int tafelId;
         private string tafel;
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
         bool eten = true;
         
 
@@ -23,7 +23,7 @@ namespace MayaMaya
             InitializeComponent();
 
             this.tafelId = tafelId;
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
             this.tafel = tafel;
             lbl_Tafelnr.Text = tafel;
             string naam = MayaMaya.Naam();
@@ -55,7 +55,7 @@ namespace MayaMaya
         private void Btn_Rekening_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Afrekenscherm scherm = new Afrekenscherm(tafelId, tafel);
+            Afrekenenscherm scherm = new Afrekenenscherm(tafelId, tafel);
             scherm.Show();
         }
 
@@ -99,7 +99,12 @@ namespace MayaMaya
 
         private void Btn_Plaats_Click(object sender, EventArgs e)
         {
-            MayaMaya.PlaatsBestelling(List_Bestelling);
+            MayaMaya.PlaatsBestelling(List_Bestelling, tafelId);
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Selecteer een gerecht om deze toe te voegen aan de bestelling. \n Druk op een bestelitem om deze weer te verwijderen. \n Druk op plaats om de bestelling te plaatsen.");
         }
     }
 }

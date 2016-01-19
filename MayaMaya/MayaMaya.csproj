@@ -107,7 +107,7 @@
       <DependentUpon>Keukenvoorraadscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Medewerker.cs" />
-    <Compile Include="Methodes.cs" />
+    <Compile Include="BestelSysteem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tafelscherm.cs">
@@ -117,6 +117,7 @@
       <DependentUpon>Tafelscherm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tafel.cs" />
+    <Compile Include="Voorraad.cs" />
     <EmbeddedResource Include="Adminscherm.resx">
       <DependentUpon>Adminscherm.cs</DependentUpon>
     </EmbeddedResource>

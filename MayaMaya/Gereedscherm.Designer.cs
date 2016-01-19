@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gereedscherm));
-            this.Btn_Geserveerd = new System.Windows.Forms.Button();
+            this.Btn_DGeserveerd = new System.Windows.Forms.Button();
             this.List_GereedEten = new System.Windows.Forms.ListBox();
             this.List_Bestellingen = new System.Windows.Forms.ListBox();
             this.Btn_Gereed = new System.Windows.Forms.Button();
@@ -53,30 +53,32 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.List_GereedDrinken = new System.Windows.Forms.ListBox();
+            this.Btn_EGeserveerd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Btn_Geserveerd
+            // Btn_DGeserveerd
             // 
-            this.Btn_Geserveerd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_Geserveerd.FlatAppearance.BorderSize = 0;
-            this.Btn_Geserveerd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Geserveerd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Geserveerd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Geserveerd.Location = new System.Drawing.Point(474, 813);
-            this.Btn_Geserveerd.Name = "Btn_Geserveerd";
-            this.Btn_Geserveerd.Size = new System.Drawing.Size(164, 40);
-            this.Btn_Geserveerd.TabIndex = 71;
-            this.Btn_Geserveerd.Text = "Geserveerd";
-            this.Btn_Geserveerd.UseVisualStyleBackColor = false;
+            this.Btn_DGeserveerd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_DGeserveerd.FlatAppearance.BorderSize = 0;
+            this.Btn_DGeserveerd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_DGeserveerd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_DGeserveerd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_DGeserveerd.Location = new System.Drawing.Point(465, 807);
+            this.Btn_DGeserveerd.Name = "Btn_DGeserveerd";
+            this.Btn_DGeserveerd.Size = new System.Drawing.Size(201, 40);
+            this.Btn_DGeserveerd.TabIndex = 71;
+            this.Btn_DGeserveerd.Text = "Drinken Geserveerd";
+            this.Btn_DGeserveerd.UseVisualStyleBackColor = false;
+            this.Btn_DGeserveerd.Click += new System.EventHandler(this.Btn_DGeserveerd_Click_1);
             // 
             // List_GereedEten
             // 
             this.List_GereedEten.FormattingEnabled = true;
-            this.List_GereedEten.Location = new System.Drawing.Point(409, 235);
+            this.List_GereedEten.Location = new System.Drawing.Point(409, 232);
             this.List_GereedEten.Name = "List_GereedEten";
-            this.List_GereedEten.Size = new System.Drawing.Size(309, 251);
+            this.List_GereedEten.Size = new System.Drawing.Size(309, 225);
             this.List_GereedEten.TabIndex = 70;
             // 
             // List_Bestellingen
@@ -172,6 +174,7 @@
             this.Btn_Help.TabIndex = 61;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Tafels
             // 
@@ -278,12 +281,13 @@
             this.Btn_Verwijder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Verwijder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Verwijder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Verwijder.Location = new System.Drawing.Point(114, 813);
+            this.Btn_Verwijder.Location = new System.Drawing.Point(114, 807);
             this.Btn_Verwijder.Name = "Btn_Verwijder";
             this.Btn_Verwijder.Size = new System.Drawing.Size(164, 40);
             this.Btn_Verwijder.TabIndex = 73;
             this.Btn_Verwijder.Text = "Verwijderen";
             this.Btn_Verwijder.UseVisualStyleBackColor = false;
+            this.Btn_Verwijder.Click += new System.EventHandler(this.Btn_Verwijder_Click);
             // 
             // label1
             // 
@@ -321,10 +325,12 @@
             // 
             // lbl_Tafelnr
             // 
+            this.lbl_Tafelnr.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_Tafelnr.AutoSize = true;
             this.lbl_Tafelnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.lbl_Tafelnr.Location = new System.Drawing.Point(185, 42);
+            this.lbl_Tafelnr.Location = new System.Drawing.Point(169, 42);
             this.lbl_Tafelnr.Name = "lbl_Tafelnr";
+            this.lbl_Tafelnr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_Tafelnr.Size = new System.Drawing.Size(79, 26);
             this.lbl_Tafelnr.TabIndex = 79;
             this.lbl_Tafelnr.Text = "tafelnr";
@@ -343,7 +349,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(405, 511);
+            this.label6.Location = new System.Drawing.Point(406, 531);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 82;
@@ -352,10 +358,25 @@
             // List_GereedDrinken
             // 
             this.List_GereedDrinken.FormattingEnabled = true;
-            this.List_GereedDrinken.Location = new System.Drawing.Point(409, 534);
+            this.List_GereedDrinken.Location = new System.Drawing.Point(409, 560);
             this.List_GereedDrinken.Name = "List_GereedDrinken";
-            this.List_GereedDrinken.Size = new System.Drawing.Size(309, 251);
+            this.List_GereedDrinken.Size = new System.Drawing.Size(309, 225);
             this.List_GereedDrinken.TabIndex = 81;
+            // 
+            // Btn_EGeserveerd
+            // 
+            this.Btn_EGeserveerd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_EGeserveerd.FlatAppearance.BorderSize = 0;
+            this.Btn_EGeserveerd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_EGeserveerd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_EGeserveerd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_EGeserveerd.Location = new System.Drawing.Point(465, 478);
+            this.Btn_EGeserveerd.Name = "Btn_EGeserveerd";
+            this.Btn_EGeserveerd.Size = new System.Drawing.Size(201, 40);
+            this.Btn_EGeserveerd.TabIndex = 83;
+            this.Btn_EGeserveerd.Text = "Eten Geserveerd";
+            this.Btn_EGeserveerd.UseVisualStyleBackColor = false;
+            this.Btn_EGeserveerd.Click += new System.EventHandler(this.Btn_EGeserveerd_Click);
             // 
             // Gereedscherm
             // 
@@ -363,6 +384,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.Btn_EGeserveerd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.List_GereedDrinken);
             this.Controls.Add(this.label5);
@@ -371,7 +393,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_Verwijder);
-            this.Controls.Add(this.Btn_Geserveerd);
+            this.Controls.Add(this.Btn_DGeserveerd);
             this.Controls.Add(this.List_GereedEten);
             this.Controls.Add(this.List_Bestellingen);
             this.Controls.Add(this.Btn_Gereed);
@@ -391,6 +413,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gereedscherm";
             this.Text = "Gereed";
+            this.Load += new System.EventHandler(this.Gereedscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -400,7 +423,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Btn_Geserveerd;
+        private System.Windows.Forms.Button Btn_DGeserveerd;
         private System.Windows.Forms.ListBox List_GereedEten;
         private System.Windows.Forms.ListBox List_Bestellingen;
         private System.Windows.Forms.Button Btn_Gereed;
@@ -424,5 +447,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox List_GereedDrinken;
+        private System.Windows.Forms.Button Btn_EGeserveerd;
     }
 }

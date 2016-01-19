@@ -9,22 +9,29 @@ namespace MayaMaya
     class Bestelling
     {
         DateTime nu;
-        int bestellingId, medewerkerId, tafelNummer;
-        decimal totaalBedrag, betaaldBedrag;
-        bool status;
-        string betaalwijze;
+        public int bestellingId, medewerkerId, tafelNummer;
+        decimal totaalBedrag;
+        string status;
 
-
-        public Bestelling(int bid, int mid, int tid, decimal tbedrag, decimal bbedrag, bool status, string betaal)
+        public Bestelling(int bId, int tId)
         {
-            nu = DateTime.Now;
+            bestellingId = bId;
+            tafelNummer = tId;
+        }
+
+        public Bestelling(DateTime datum, int bid, int mid, int tid, decimal tbedrag, string status)
+        {
+            nu = datum;
             bestellingId = bid;
             medewerkerId = mid;
             tafelNummer = tid;
             totaalBedrag = tbedrag;
-            betaaldBedrag = bbedrag;
             this.status = status;
-            betaalwijze = betaal;
+        }
+
+        public override string ToString()
+        {
+            return "Tafel " + tafelNummer +"\t Bestelling" + bestellingId + "\t" + nu;
         }
     }
 }

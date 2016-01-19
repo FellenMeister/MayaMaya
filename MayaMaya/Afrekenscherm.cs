@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace MayaMaya
 {
-    public partial class Afrekenscherm : Form
+    public partial class Afrekenenscherm : Form
     {
         private int tafelId;
         private string naam;
-        Methodes MayaMaya;
-        public Afrekenscherm(int tafelId, string naam)
+        BestelSysteem MayaMaya;
+        public Afrekenenscherm(int tafelId, string naam)
         {
             InitializeComponent();
             this.tafelId = tafelId;
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
             this.naam = naam;
             lbl_Tafelnr.Text = naam;
         }
@@ -27,6 +27,8 @@ namespace MayaMaya
         private void Afrekenscherm_Load(object sender, EventArgs e)
         {
             Lbl_Naam.Text = MayaMaya.Naam();
+            MayaMaya.LaadRekening(tafelId, List_Rekening);
+            MayaMaya.LaadNaamOpmerking(Txt_AddNaam, Txt_AddOpmerking, tafelId);
         }
 
         private void Btn_Bestelling_Click(object sender, EventArgs e)
@@ -74,10 +76,19 @@ namespace MayaMaya
          
         }
 
-      
+        private void Btn_Afrekenen_Click(object sender, EventArgs e)
+        {
+            string betaalWijze = Txt_Betaalwijze.Text;
+            int fooi = int.Parse(Txt_fooi.Text);
+            MayaMaya.Afrekenen(betaalWijze, fooi, tafelId);
+            this.Hide();
+            Tafelscherm scherm = new Tafelscherm();
+            scherm.Show();
+        }
 
-
-       
-       
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Voeg optioneel een naam toe en druk op reserveer of bezet om de tafel deze status te geven. \n Voer een opmerking in en druk op toevoegen om deze toe te voegen. \n Geef aan op welke wijze betaalt wordt en een eventuele fooi. Druk hierna op afrekenen om de bestelling af te ronden.");
+        }
     }
 }

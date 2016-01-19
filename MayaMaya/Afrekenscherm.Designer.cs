@@ -1,6 +1,6 @@
 ﻿namespace MayaMaya
 {
-    partial class Afrekenscherm
+    partial class Afrekenenscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Afrekenscherm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Afrekenenscherm));
             this.Lbl_Naam = new System.Windows.Forms.Label();
             this.Btn_Gereed = new System.Windows.Forms.Button();
             this.Btn_Rekening = new System.Windows.Forms.Button();
@@ -50,7 +50,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.List_Bestelling = new System.Windows.Forms.ListView();
             this.lbl_Tafelnr = new System.Windows.Forms.Label();
             this.Txt_AddNaam = new System.Windows.Forms.TextBox();
             this.Txt_fooi = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Txt_Betaalwijze = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.List_Rekening = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -161,6 +161,7 @@
             this.Btn_Help.TabIndex = 85;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Tafels
             // 
@@ -303,6 +304,7 @@
             this.Btn_Afrekenen.TabIndex = 90;
             this.Btn_Afrekenen.Text = "Afrekenen";
             this.Btn_Afrekenen.UseVisualStyleBackColor = false;
+            this.Btn_Afrekenen.Click += new System.EventHandler(this.Btn_Afrekenen_Click);
             // 
             // Txt_AddOpmerking
             // 
@@ -342,24 +344,19 @@
             this.label5.TabIndex = 100;
             this.label5.Text = "Fooi:";
             // 
-            // List_Bestelling
-            // 
-            this.List_Bestelling.Location = new System.Drawing.Point(171, 581);
-            this.List_Bestelling.Name = "List_Bestelling";
-            this.List_Bestelling.Size = new System.Drawing.Size(453, 177);
-            this.List_Bestelling.TabIndex = 101;
-            this.List_Bestelling.UseCompatibleStateImageBehavior = false;
-            // 
             // lbl_Tafelnr
             // 
+            this.lbl_Tafelnr.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_Tafelnr.AutoSize = true;
             this.lbl_Tafelnr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.lbl_Tafelnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.lbl_Tafelnr.Location = new System.Drawing.Point(185, 42);
+            this.lbl_Tafelnr.Location = new System.Drawing.Point(171, 41);
             this.lbl_Tafelnr.Name = "lbl_Tafelnr";
+            this.lbl_Tafelnr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_Tafelnr.Size = new System.Drawing.Size(79, 26);
             this.lbl_Tafelnr.TabIndex = 102;
             this.lbl_Tafelnr.Text = "tafelnr";
+            this.lbl_Tafelnr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_AddNaam
             // 
@@ -417,12 +414,21 @@
             this.label7.TabIndex = 108;
             this.label7.Text = "Betaalwijze:";
             // 
-            // Afrekenscherm
+            // List_Rekening
+            // 
+            this.List_Rekening.FormattingEnabled = true;
+            this.List_Rekening.Location = new System.Drawing.Point(171, 581);
+            this.List_Rekening.Name = "List_Rekening";
+            this.List_Rekening.Size = new System.Drawing.Size(453, 173);
+            this.List_Rekening.TabIndex = 110;
+            // 
+            // Afrekenenscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.List_Rekening);
             this.Controls.Add(this.Txt_Betaalwijze);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -430,7 +436,6 @@
             this.Controls.Add(this.Txt_fooi);
             this.Controls.Add(this.Txt_AddNaam);
             this.Controls.Add(this.lbl_Tafelnr);
-            this.Controls.Add(this.List_Bestelling);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
@@ -453,7 +458,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Name = "Afrekenscherm";
+            this.Name = "Afrekenenscherm";
             this.Text = "Afrekenscherm";
             this.Load += new System.EventHandler(this.Afrekenscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -486,7 +491,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListView List_Bestelling;
         private System.Windows.Forms.Label lbl_Tafelnr;
         private System.Windows.Forms.TextBox Txt_AddNaam;
         private System.Windows.Forms.TextBox Txt_fooi;
@@ -494,5 +498,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox Txt_Betaalwijze;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox List_Rekening;
     }
 }

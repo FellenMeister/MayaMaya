@@ -12,11 +12,11 @@ namespace MayaMaya
 {
     public partial class Inlogscherm : Form
     {
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
         public Inlogscherm()
         {
             InitializeComponent();
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
         }
 
         private void Btn_Login_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace MayaMaya
 
         private void Btn_Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Voer je wachtwoord in en druk op oke.\nBent u uw wachtwoord vergeten neem contact op met de Admin.");
+            MessageBox.Show("Voer je wachtwoord in en druk op inloggen.\nBent u uw wachtwoord vergeten neem contact op met de Admin.");
         }
     }
 }    

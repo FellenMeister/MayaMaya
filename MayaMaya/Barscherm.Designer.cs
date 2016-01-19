@@ -64,6 +64,7 @@
             this.Btn_Voorraad.TabIndex = 127;
             this.Btn_Voorraad.Text = "Voorraad";
             this.Btn_Voorraad.UseVisualStyleBackColor = false;
+            this.Btn_Voorraad.Click += new System.EventHandler(this.Btn_Voorraad_Click);
             // 
             // pictureBox2
             // 
@@ -190,6 +191,7 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseMnemonic = false;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Lbl_Naam
             // 
@@ -272,6 +274,7 @@
             this.Btn_Gereed.TabIndex = 131;
             this.Btn_Gereed.Text = "Gereed";
             this.Btn_Gereed.UseVisualStyleBackColor = false;
+            this.Btn_Gereed.Click += new System.EventHandler(this.Btn_Gereed_Click);
             // 
             // List_Tafels
             // 
@@ -284,6 +287,7 @@
             this.List_Tafels.Name = "List_Tafels";
             this.List_Tafels.Size = new System.Drawing.Size(349, 394);
             this.List_Tafels.TabIndex = 130;
+            this.List_Tafels.SelectedIndexChanged += new System.EventHandler(this.List_Tafels_SelectedIndexChanged);
             // 
             // Barscherm
             // 

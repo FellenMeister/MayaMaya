@@ -176,6 +176,7 @@
             this.Btn_Help.TabIndex = 116;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Keuken
             // 
@@ -190,6 +191,7 @@
             this.Btn_Keuken.TabIndex = 115;
             this.Btn_Keuken.Text = "Keuken";
             this.Btn_Keuken.UseVisualStyleBackColor = false;
+            this.Btn_Keuken.Click += new System.EventHandler(this.Btn_Keuken_Click);
             // 
             // button1
             // 
@@ -222,7 +224,7 @@
             this.Lbl_Naam.Text = "Naam";
             this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // List_Keukenvoorraadscherm
+            // Keukenvoorraadscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,8 +244,9 @@
             this.Controls.Add(this.Btn_Keuken);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Name = "List_Keukenvoorraadscherm";
+            this.Name = "Keukenvoorraadscherm";
             this.Text = "Keukenvoorraadscherm";
+            this.Load += new System.EventHandler(this.Keukenvoorraadscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

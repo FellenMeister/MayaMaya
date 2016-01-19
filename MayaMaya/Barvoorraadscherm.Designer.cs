@@ -154,6 +154,7 @@
             this.Btn_Help.TabIndex = 131;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Bar
             // 
@@ -168,6 +169,7 @@
             this.Btn_Bar.TabIndex = 130;
             this.Btn_Bar.Text = "Bar";
             this.Btn_Bar.UseVisualStyleBackColor = false;
+            this.Btn_Bar.Click += new System.EventHandler(this.Btn_Bar_Click);
             // 
             // button1
             // 
@@ -244,6 +246,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.Name = "Barvoorraadscherm";
             this.Text = "Barvoorraadscherm";
+            this.Load += new System.EventHandler(this.Barvoorraadscherm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

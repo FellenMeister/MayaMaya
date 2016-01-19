@@ -13,6 +13,11 @@ namespace MayaMaya
         decimal prijs;
         string naam;
 
+        public Item(string naam)
+        {
+            this.naam = naam;
+        }
+
         public Item(int id, int categorieId, string naam, decimal prijs, decimal btw)
         {
             this.id = id;

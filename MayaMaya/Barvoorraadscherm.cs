@@ -12,11 +12,11 @@ namespace MayaMaya
 {
     public partial class Barvoorraadscherm : Form
     {
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
         public Barvoorraadscherm()
         {
             InitializeComponent();
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
             string naam = MayaMaya.Naam();
             Lbl_Naam.Text = naam;
         }
@@ -25,6 +25,23 @@ namespace MayaMaya
         {
             MayaMaya.LogUit();
             this.Hide();
+        }
+
+        private void Barvoorraadscherm_Load(object sender, EventArgs e)
+        {
+            MayaMaya.DrankVoorraad(List_Voorraad);
+        }
+
+        private void Btn_Bar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Barscherm scherm = new Barscherm();
+            scherm.Show();
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hier staat de voorraad van de drank.");
         }
     }
 }

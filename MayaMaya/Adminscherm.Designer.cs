@@ -44,7 +44,6 @@
             this.txtWachtwoord = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.RBtn_Manager = new System.Windows.Forms.RadioButton();
             this.RBtn_Bediening = new System.Windows.Forms.RadioButton();
             this.RBtn_Bar = new System.Windows.Forms.RadioButton();
             this.RBtn_Keuken = new System.Windows.Forms.RadioButton();
@@ -243,23 +242,11 @@
             this.label5.TabIndex = 79;
             this.label5.Text = "Functie:";
             // 
-            // RBtn_Manager
-            // 
-            this.RBtn_Manager.AutoSize = true;
-            this.RBtn_Manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn_Manager.Location = new System.Drawing.Point(836, 402);
-            this.RBtn_Manager.Name = "RBtn_Manager";
-            this.RBtn_Manager.Size = new System.Drawing.Size(97, 24);
-            this.RBtn_Manager.TabIndex = 80;
-            this.RBtn_Manager.TabStop = true;
-            this.RBtn_Manager.Text = "Manager";
-            this.RBtn_Manager.UseVisualStyleBackColor = true;
-            // 
             // RBtn_Bediening
             // 
             this.RBtn_Bediening.AutoSize = true;
             this.RBtn_Bediening.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn_Bediening.Location = new System.Drawing.Point(988, 402);
+            this.RBtn_Bediening.Location = new System.Drawing.Point(836, 402);
             this.RBtn_Bediening.Name = "RBtn_Bediening";
             this.RBtn_Bediening.Size = new System.Drawing.Size(107, 24);
             this.RBtn_Bediening.TabIndex = 81;
@@ -271,7 +258,7 @@
             // 
             this.RBtn_Bar.AutoSize = true;
             this.RBtn_Bar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn_Bar.Location = new System.Drawing.Point(988, 462);
+            this.RBtn_Bar.Location = new System.Drawing.Point(968, 462);
             this.RBtn_Bar.Name = "RBtn_Bar";
             this.RBtn_Bar.Size = new System.Drawing.Size(55, 24);
             this.RBtn_Bar.TabIndex = 83;
@@ -369,7 +356,6 @@
             this.Controls.Add(this.RBtn_Bar);
             this.Controls.Add(this.RBtn_Keuken);
             this.Controls.Add(this.RBtn_Bediening);
-            this.Controls.Add(this.RBtn_Manager);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtWachtwoord);
             this.Controls.Add(this.label4);
@@ -415,7 +401,6 @@
         private System.Windows.Forms.TextBox txtWachtwoord;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton RBtn_Manager;
         private System.Windows.Forms.RadioButton RBtn_Bediening;
         private System.Windows.Forms.RadioButton RBtn_Bar;
         private System.Windows.Forms.RadioButton RBtn_Keuken;

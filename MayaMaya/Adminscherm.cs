@@ -12,13 +12,13 @@ namespace MayaMaya
 {
     public partial class Admin : Form
     {
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
 
         string functie;
         public Admin()
         {
             InitializeComponent();
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
             string naam = MayaMaya.Naam();
             Lbl_naam.Text = naam;
         }
@@ -45,12 +45,8 @@ namespace MayaMaya
         }
 
         private void Btn_Toevoegen_Click(object sender, EventArgs e)
-        {
-            if (RBtn_Manager.Checked)
-            {
-                functie = "Manager";
-            }
-            else if(RBtn_Keuken.Checked)
+        {          
+            if(RBtn_Keuken.Checked)
             {
                 functie = "Keuken";
             }

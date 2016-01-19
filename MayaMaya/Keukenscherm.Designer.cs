@@ -97,7 +97,7 @@
             this.List_Tafels.Name = "List_Tafels";
             this.List_Tafels.Size = new System.Drawing.Size(349, 394);
             this.List_Tafels.TabIndex = 98;
-            this.List_Tafels.SelectedIndexChanged += new System.EventHandler(this.List_Bestelling_SelectedIndexChanged);
+            this.List_Tafels.SelectedIndexChanged += new System.EventHandler(this.List_Tafels_SelectedIndexChanged);
             // 
             // pictureBox2
             // 

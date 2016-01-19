@@ -9,17 +9,20 @@ namespace MayaMaya
     class BestellingItem
     {
         public int bestellingId, categorie_id, itemId;
+        public decimal prijs, BTW;
         public string item;
 
         public BestellingItem()
         { }
 
-        public BestellingItem(int bId, int catId, int iId, string item)
+        public BestellingItem(int bId, int catId, int iId, string item, decimal BTW, decimal prijs)
         {
             bestellingId = bId;
             categorie_id = catId;
             itemId = iId;
             this.item = item;
+            this.BTW = BTW;
+            this.prijs = prijs;
         }
 
         public override string ToString()

@@ -12,11 +12,11 @@ namespace MayaMaya
 {
     public partial class Keukenvoorraadscherm : Form
     {
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
         public Keukenvoorraadscherm()
         {
             InitializeComponent();
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
             string naam = MayaMaya.Naam();
             Lbl_Naam.Text = naam;
         }
@@ -25,6 +25,23 @@ namespace MayaMaya
         {
             MayaMaya.LogUit();
             this.Hide();
+        }
+
+        private void Keukenvoorraadscherm_Load(object sender, EventArgs e)
+        {
+            MayaMaya.VoedselVoorraad(List_Voorraad);
+        }
+
+        private void Btn_Keuken_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Keukenscherm scherm = new Keukenscherm();
+            scherm.Show();
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hier staat de voorraad van de gerechten.");
         }
     }
 }

@@ -12,12 +12,12 @@ namespace MayaMaya
 {
     public partial class Tafelscherm : Form
     {
-        Methodes MayaMaya;
+        BestelSysteem MayaMaya;
         public int tafelnummer;
         public Tafelscherm()
         {
             InitializeComponent();
-            MayaMaya = new Methodes("MayaMaya");
+            MayaMaya = new BestelSysteem("MayaMaya");
 
             string naam = MayaMaya.Naam();
             Lbl_Naam.Text = naam;
@@ -128,6 +128,11 @@ namespace MayaMaya
         {
             MayaMaya.LogUit();
             this.Hide();
+        }
+
+        private void Btn_Help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Klik op een tafel om deze te selecteren.");
         }
     }
 }

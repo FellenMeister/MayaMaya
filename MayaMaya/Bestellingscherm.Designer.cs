@@ -203,6 +203,7 @@
             this.Btn_Help.TabIndex = 61;
             this.Btn_Help.Text = "?";
             this.Btn_Help.UseVisualStyleBackColor = false;
+            this.Btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
             // Btn_Tafels
             // 
@@ -324,10 +325,12 @@
             // 
             // lbl_Tafelnr
             // 
+            this.lbl_Tafelnr.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_Tafelnr.AutoSize = true;
             this.lbl_Tafelnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.lbl_Tafelnr.Location = new System.Drawing.Point(180, 42);
+            this.lbl_Tafelnr.Location = new System.Drawing.Point(169, 42);
             this.lbl_Tafelnr.Name = "lbl_Tafelnr";
+            this.lbl_Tafelnr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_Tafelnr.Size = new System.Drawing.Size(79, 26);
             this.lbl_Tafelnr.TabIndex = 78;
             this.lbl_Tafelnr.Text = "tafelnr";
