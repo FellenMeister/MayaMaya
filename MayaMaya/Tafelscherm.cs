@@ -132,7 +132,14 @@ namespace MayaMaya
 
         private void Btn_Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Klik op een tafel om deze te selecteren.");
+            MessageBox.Show("Klik op een tafel om deze te selecteren.\nGroen = vrij. \nRood = bezet \nBlauw = gereed \nViolet = wacht");
+        }
+
+        private void Btn_Gereed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Gereedscherm scherm = new Gereedscherm();
+            scherm.Show();
         }
     }
 }

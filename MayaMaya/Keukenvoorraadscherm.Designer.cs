@@ -74,12 +74,14 @@
             // 
             this.List_Voorraad.AllowDrop = true;
             this.List_Voorraad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Voorraad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.List_Voorraad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Voorraad.FormattingEnabled = true;
+            this.List_Voorraad.ItemHeight = 20;
             this.List_Voorraad.Location = new System.Drawing.Point(337, 135);
             this.List_Voorraad.MultiColumn = true;
             this.List_Voorraad.Name = "List_Voorraad";
-            this.List_Voorraad.Size = new System.Drawing.Size(693, 420);
+            this.List_Voorraad.Size = new System.Drawing.Size(693, 404);
             this.List_Voorraad.TabIndex = 123;
             // 
             // pictureBox2

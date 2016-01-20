@@ -34,7 +34,6 @@
             this.List_Kaart = new System.Windows.Forms.ListBox();
             this.Btn_Drinken = new System.Windows.Forms.Button();
             this.Btn_Eten = new System.Windows.Forms.Button();
-            this.Btn_Gereed = new System.Windows.Forms.Button();
             this.Btn_Rekening = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Btn_LogOut = new System.Windows.Forms.Button();
@@ -72,19 +71,27 @@
             // 
             // List_Bestelling
             // 
+            this.List_Bestelling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Bestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.List_Bestelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Bestelling.FormattingEnabled = true;
+            this.List_Bestelling.ItemHeight = 20;
             this.List_Bestelling.Location = new System.Drawing.Point(409, 274);
             this.List_Bestelling.Name = "List_Bestelling";
-            this.List_Bestelling.Size = new System.Drawing.Size(309, 472);
+            this.List_Bestelling.Size = new System.Drawing.Size(309, 464);
             this.List_Bestelling.TabIndex = 70;
             this.List_Bestelling.SelectedIndexChanged += new System.EventHandler(this.List_Bestelling_SelectedIndexChanged);
             // 
             // List_Kaart
             // 
+            this.List_Kaart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Kaart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.List_Kaart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Kaart.FormattingEnabled = true;
+            this.List_Kaart.ItemHeight = 20;
             this.List_Kaart.Location = new System.Drawing.Point(50, 274);
             this.List_Kaart.Name = "List_Kaart";
-            this.List_Kaart.Size = new System.Drawing.Size(309, 550);
+            this.List_Kaart.Size = new System.Drawing.Size(309, 544);
             this.List_Kaart.TabIndex = 69;
             this.List_Kaart.SelectedIndexChanged += new System.EventHandler(this.List_Kaart_SelectedIndexChanged);
             // 
@@ -118,21 +125,6 @@
             this.Btn_Eten.UseVisualStyleBackColor = false;
             this.Btn_Eten.Click += new System.EventHandler(this.Btn_Eten_Click);
             // 
-            // Btn_Gereed
-            // 
-            this.Btn_Gereed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
-            this.Btn_Gereed.FlatAppearance.BorderSize = 0;
-            this.Btn_Gereed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Gereed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Gereed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Gereed.Location = new System.Drawing.Point(474, 108);
-            this.Btn_Gereed.Name = "Btn_Gereed";
-            this.Btn_Gereed.Size = new System.Drawing.Size(150, 45);
-            this.Btn_Gereed.TabIndex = 66;
-            this.Btn_Gereed.Text = "Gereed";
-            this.Btn_Gereed.UseVisualStyleBackColor = false;
-            this.Btn_Gereed.Click += new System.EventHandler(this.Btn_Gereed_Click);
-            // 
             // Btn_Rekening
             // 
             this.Btn_Rekening.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
@@ -140,7 +132,7 @@
             this.Btn_Rekening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Rekening.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Rekening.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.Btn_Rekening.Location = new System.Drawing.Point(294, 108);
+            this.Btn_Rekening.Location = new System.Drawing.Point(404, 103);
             this.Btn_Rekening.Name = "Btn_Rekening";
             this.Btn_Rekening.Size = new System.Drawing.Size(150, 45);
             this.Btn_Rekening.TabIndex = 65;
@@ -155,7 +147,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.button3.Location = new System.Drawing.Point(114, 108);
+            this.button3.Location = new System.Drawing.Point(224, 103);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 45);
             this.button3.TabIndex = 64;
@@ -364,7 +356,6 @@
             this.Controls.Add(this.List_Kaart);
             this.Controls.Add(this.Btn_Drinken);
             this.Controls.Add(this.Btn_Eten);
-            this.Controls.Add(this.Btn_Gereed);
             this.Controls.Add(this.Btn_Rekening);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Btn_LogOut);
@@ -396,7 +387,6 @@
         private System.Windows.Forms.ListBox List_Bestelling;
         private System.Windows.Forms.Button Btn_Drinken;
         private System.Windows.Forms.Button Btn_Eten;
-        private System.Windows.Forms.Button Btn_Gereed;
         private System.Windows.Forms.Button Btn_Rekening;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Btn_LogOut;

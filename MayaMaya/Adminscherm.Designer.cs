@@ -52,6 +52,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Lbl_naam = new System.Windows.Forms.Label();
+            this.Btn_Wijzigen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -187,15 +188,16 @@
             // 
             this.List_Medewerkers.AllowDrop = true;
             this.List_Medewerkers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
-            this.List_Medewerkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.List_Medewerkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.List_Medewerkers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Medewerkers.FormattingEnabled = true;
-            this.List_Medewerkers.ItemHeight = 31;
+            this.List_Medewerkers.ItemHeight = 20;
             this.List_Medewerkers.Location = new System.Drawing.Point(36, 135);
             this.List_Medewerkers.MultiColumn = true;
             this.List_Medewerkers.Name = "List_Medewerkers";
-            this.List_Medewerkers.Size = new System.Drawing.Size(549, 407);
+            this.List_Medewerkers.Size = new System.Drawing.Size(549, 404);
             this.List_Medewerkers.TabIndex = 74;
+            this.List_Medewerkers.SelectedIndexChanged += new System.EventHandler(this.List_Medewerkers_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -289,7 +291,7 @@
             this.Btn_Verwijderen.Name = "Btn_Verwijderen";
             this.Btn_Verwijderen.Size = new System.Drawing.Size(164, 40);
             this.Btn_Verwijderen.TabIndex = 84;
-            this.Btn_Verwijderen.Text = "Verwijder";
+            this.Btn_Verwijderen.Text = "Verwijderen";
             this.Btn_Verwijderen.UseVisualStyleBackColor = false;
             this.Btn_Verwijderen.Click += new System.EventHandler(this.Btn_Verwijderen_Click);
             // 
@@ -342,12 +344,28 @@
             this.Lbl_naam.Text = "Naam";
             this.Lbl_naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // Btn_Wijzigen
+            // 
+            this.Btn_Wijzigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Wijzigen.FlatAppearance.BorderSize = 0;
+            this.Btn_Wijzigen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Wijzigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Wijzigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.Btn_Wijzigen.Location = new System.Drawing.Point(818, 561);
+            this.Btn_Wijzigen.Name = "Btn_Wijzigen";
+            this.Btn_Wijzigen.Size = new System.Drawing.Size(164, 40);
+            this.Btn_Wijzigen.TabIndex = 90;
+            this.Btn_Wijzigen.Text = "Wijzigen";
+            this.Btn_Wijzigen.UseVisualStyleBackColor = false;
+            this.Btn_Wijzigen.Click += new System.EventHandler(this.Btn_Wijzigen_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1264, 721);
+            this.Controls.Add(this.Btn_Wijzigen);
             this.Controls.Add(this.Lbl_naam);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -409,5 +427,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Lbl_naam;
+        private System.Windows.Forms.Button Btn_Wijzigen;
     }
 }

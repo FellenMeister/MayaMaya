@@ -36,7 +36,7 @@ namespace MayaMaya
 
         private void Keukenscherm_Load(object sender, EventArgs e)
         {
-            MayaMaya.ToonBestelling(List_Tafels);
+            MayaMaya.ToonEetBestelling(List_Tafels);
         }
 
         private void Btn_Gereed_Click(object sender, EventArgs e)
@@ -44,6 +44,8 @@ namespace MayaMaya
             int index = List_Tafels.SelectedIndex;
             MayaMaya.VoedselGereed(index);
             MayaMaya.GereedVoedsel(List_Gereed);
+            List_Tafels.Items.Clear();
+            MayaMaya.ToonEetBestelling(List_Tafels);
         }
 
         private void Btn_Help_Click(object sender, EventArgs e)
@@ -56,7 +58,6 @@ namespace MayaMaya
             int index = List_Tafels.SelectedIndex;
             List_Bestelling.Items.Clear();
             MayaMaya.ToonVoedsel(List_Bestelling, index);
-
         }
     }
 }

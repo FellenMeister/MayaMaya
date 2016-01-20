@@ -34,11 +34,56 @@ namespace MayaMaya
             MayaMaya.LogUit();
             this.Hide();
         }
+        private void List_Medewerkers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = List_Medewerkers.SelectedIndex;
+            string naam, functie;
+            int wachtwoord;
+            MayaMaya.ToonWerker(index, out naam, out wachtwoord, out functie);
+            txtAddnaam.Text = naam;
+            txtWachtwoord.Text = wachtwoord.ToString();
+            if (functie == "Keuken")
+            {
+                RBtn_Keuken.Select();
+            }
+            else if (functie == "Bediening")
+            {
+                RBtn_Bediening.Select();
+            }
+            else if (functie == "Bar")
+            {
+                RBtn_Bar.Select();
+            }
+
+        }
 
         private void Btn_Verwijderen_Click(object sender, EventArgs e)
         {
-            int nummer = List_Medewerkers.SelectedIndex + 1;
-            MayaMaya.VerwijderMedewerker(nummer);
+            int index = List_Medewerkers.SelectedIndex;
+            MayaMaya.VerwijderMedewerker(index);
+            List_Medewerkers.Items.Clear();
+            MayaMaya.LeesMedewerkers();
+            MayaMaya.ToonMedewerker(List_Medewerkers);
+        }
+
+        private void Btn_Wijzigen_Click(object sender, EventArgs e)
+        {
+            int index = List_Medewerkers.SelectedIndex;
+
+            // De functie meegeven aan de hand van de radiobuttons
+            if (RBtn_Keuken.Checked)
+            {
+                functie = "Keuken";
+            }
+            else if (RBtn_Bediening.Checked)
+            {
+                functie = "Bediening";
+            }
+            else if (RBtn_Bar.Checked)
+            {
+                functie = "Bar";
+            }
+            MayaMaya.WijzigMedewerker(index, txtAddnaam, txtWachtwoord, functie);
             List_Medewerkers.Items.Clear();
             MayaMaya.LeesMedewerkers();
             MayaMaya.ToonMedewerker(List_Medewerkers);
@@ -68,5 +113,6 @@ namespace MayaMaya
         {
             MessageBox.Show("Account verwijderen:\n Selecteer een account en klik op de knop 'Verwijderen'.\n\n Account toevoegen:\n Vul de gegevens in in de daarvoor bestemde tesktvakken en klik op de knop 'Toevoegen'.");
         }
+
     }   
 }

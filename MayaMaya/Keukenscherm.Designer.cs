@@ -90,12 +90,14 @@
             // 
             this.List_Tafels.AllowDrop = true;
             this.List_Tafels.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Tafels.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.List_Tafels.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Tafels.FormattingEnabled = true;
+            this.List_Tafels.ItemHeight = 20;
             this.List_Tafels.Location = new System.Drawing.Point(45, 135);
             this.List_Tafels.MultiColumn = true;
             this.List_Tafels.Name = "List_Tafels";
-            this.List_Tafels.Size = new System.Drawing.Size(349, 394);
+            this.List_Tafels.Size = new System.Drawing.Size(349, 384);
             this.List_Tafels.TabIndex = 98;
             this.List_Tafels.SelectedIndexChanged += new System.EventHandler(this.List_Tafels_SelectedIndexChanged);
             // 
@@ -245,12 +247,14 @@
             // 
             this.List_Gereed.AllowDrop = true;
             this.List_Gereed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Gereed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.List_Gereed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Gereed.FormattingEnabled = true;
+            this.List_Gereed.ItemHeight = 20;
             this.List_Gereed.Location = new System.Drawing.Point(840, 135);
             this.List_Gereed.MultiColumn = true;
             this.List_Gereed.Name = "List_Gereed";
-            this.List_Gereed.Size = new System.Drawing.Size(349, 394);
+            this.List_Gereed.Size = new System.Drawing.Size(349, 384);
             this.List_Gereed.TabIndex = 113;
             // 
             // Lbl_Naam
@@ -271,12 +275,14 @@
             // 
             this.List_Bestelling.AllowDrop = true;
             this.List_Bestelling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
+            this.List_Bestelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.List_Bestelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
             this.List_Bestelling.FormattingEnabled = true;
+            this.List_Bestelling.ItemHeight = 20;
             this.List_Bestelling.Location = new System.Drawing.Point(443, 135);
             this.List_Bestelling.MultiColumn = true;
             this.List_Bestelling.Name = "List_Bestelling";
-            this.List_Bestelling.Size = new System.Drawing.Size(349, 394);
+            this.List_Bestelling.Size = new System.Drawing.Size(349, 384);
             this.List_Bestelling.TabIndex = 115;
             // 
             // label1

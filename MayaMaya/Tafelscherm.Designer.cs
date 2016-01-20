@@ -49,6 +49,7 @@
             this.Btn_Tafel4 = new System.Windows.Forms.Button();
             this.Btn_Tafel10 = new System.Windows.Forms.Button();
             this.Lbl_Naam = new System.Windows.Forms.Label();
+            this.Btn_Gereed = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -344,12 +345,28 @@
             this.Lbl_Naam.Text = "Naam";
             this.Lbl_Naam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // Btn_Gereed
+            // 
+            this.Btn_Gereed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(189)))), ((int)(((byte)(169)))));
+            this.Btn_Gereed.FlatAppearance.BorderSize = 0;
+            this.Btn_Gereed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Gereed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Gereed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(74)))), ((int)(((byte)(54)))));
+            this.Btn_Gereed.Location = new System.Drawing.Point(154, 24);
+            this.Btn_Gereed.Name = "Btn_Gereed";
+            this.Btn_Gereed.Size = new System.Drawing.Size(125, 60);
+            this.Btn_Gereed.TabIndex = 107;
+            this.Btn_Gereed.Text = "Gereed";
+            this.Btn_Gereed.UseVisualStyleBackColor = false;
+            this.Btn_Gereed.Click += new System.EventHandler(this.Btn_Gereed_Click);
+            // 
             // Tafelscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(752, 985);
+            this.Controls.Add(this.Btn_Gereed);
             this.Controls.Add(this.Lbl_Naam);
             this.Controls.Add(this.Btn_Tafel1);
             this.Controls.Add(this.Btn_LogOut);
@@ -405,5 +422,6 @@
         private System.Windows.Forms.Button Btn_Tafel4;
         private System.Windows.Forms.Button Btn_Tafel10;
         private System.Windows.Forms.Label Lbl_Naam;
+        private System.Windows.Forms.Button Btn_Gereed;
     }
 }

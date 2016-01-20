@@ -58,13 +58,6 @@ namespace MayaMaya
             Afrekenenscherm scherm = new Afrekenenscherm(tafelId, tafel);
             scherm.Show();
         }
-
-        private void Btn_Gereed_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Gereedscherm scherm = new Gereedscherm(tafelId, tafel);
-            scherm.Show();
-        }
         
         private void Btn_Drinken_Click(object sender, EventArgs e)
         {

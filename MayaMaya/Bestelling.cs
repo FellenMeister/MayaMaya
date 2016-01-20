@@ -31,7 +31,7 @@ namespace MayaMaya
 
         public override string ToString()
         {
-            return "Tafel " + tafelNummer +"\t Bestelling" + bestellingId + "\t" + nu;
+            return "T" + tafelNummer +"   Bnr" + bestellingId + "   " + nu;
         }
     }
 }

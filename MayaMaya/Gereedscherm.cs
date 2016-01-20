@@ -12,37 +12,19 @@ namespace MayaMaya
 {
     public partial class Gereedscherm : Form
     {
-        private int tafelId;
-        private string naam;
         BestelSysteem MayaMaya;
-        public Gereedscherm(int tafelId, string naam)
+        public Gereedscherm()
         {
             InitializeComponent();
-            this.tafelId = tafelId;
             MayaMaya = new BestelSysteem("MayaMaya");
-            this.naam = naam;
-            lbl_Tafelnr.Text = naam;
-            Lbl_Naam.Text = MayaMaya.Naam();
+            string naam = MayaMaya.Naam();
+            Lbl_Naam.Text = naam;
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
         {
             this.Hide();
             Tafelscherm scherm = new Tafelscherm();
-            scherm.Show();
-        }
-
-        private void Btn_Bestelling_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Bestellingscherm scherm = new Bestellingscherm(tafelId, naam);
-            scherm.Show();
-        }
-
-        private void Btn_Rekening_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Afrekenenscherm scherm = new Afrekenenscherm(tafelId, naam);
             scherm.Show();
         }
 
@@ -65,6 +47,8 @@ namespace MayaMaya
         {
             int index = List_Bestellingen.SelectedIndex;
             MayaMaya.VerwijderBestelling(index, List_Bestellingen);
+            MayaMaya.ToonBestelling(List_Bestellingen);
+            
         }
 
         private void Btn_EGeserveerd_Click(object sender, EventArgs e)

@@ -28,7 +28,6 @@ namespace MayaMaya
         {
             Lbl_Naam.Text = MayaMaya.Naam();
             MayaMaya.LaadRekening(tafelId, List_Rekening);
-            MayaMaya.LaadNaamOpmerking(Txt_AddNaam, Txt_AddOpmerking, tafelId);
         }
 
         private void Btn_Bestelling_Click(object sender, EventArgs e)
@@ -38,28 +37,10 @@ namespace MayaMaya
             scherm.Show();
         }
 
-        private void Btn_Gereed_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Gereedscherm scherm = new Gereedscherm(tafelId, naam);
-            scherm.Show();
-        }
-
         private void Btn_LogOut_Click(object sender, EventArgs e)
         {
             MayaMaya.LogUit();
             this.Hide();
-        }
-
-        private void Btn_Reserveren_Click(object sender, EventArgs e)
-        {
-            MayaMaya.ReserveerTafel(tafelId);
-        }
-
-        private void Btn_Bezet_Click(object sender, EventArgs e)
-        {
-            string bezoeker = Txt_AddNaam.Text; 
-            MayaMaya.BezetTafel(tafelId, bezoeker);
         }
 
         private void Btn_Tafels_Click(object sender, EventArgs e)
@@ -71,16 +52,31 @@ namespace MayaMaya
 
         private void Btn_Voegtoe_Click(object sender, EventArgs e)
         {        
-            string Opmerking = Txt_AddOpmerking.Text;            
-            MayaMaya.VoegOpmerkingToe(tafelId, Opmerking);
-         
+            string Opmerking = Txt_AddOpmerking.Text;
+            decimal fooi = decimal.Parse(Txt_fooi.Text);
+            string betaalwijze = "";
+            // De betaalwijze meegeven aan de hand van de radiobuttons
+            if (RBtn_Pin.Checked)
+            {
+                betaalwijze = "Pinnen";
+            }
+            else if (RBtn_Creditcard.Checked)
+            {
+                betaalwijze = "Creditcard";
+            }
+            else if (RBtn_Contant.Checked)
+            {
+                betaalwijze = "Contant";
+            }
+
+            MayaMaya.VoegToe(tafelId, Opmerking, betaalwijze, fooi);
+            List_Rekening.Items.Clear();
+            MayaMaya.LaadRekening(tafelId, List_Rekening);
         }
 
         private void Btn_Afrekenen_Click(object sender, EventArgs e)
         {
-            string betaalWijze = Txt_Betaalwijze.Text;
-            int fooi = int.Parse(Txt_fooi.Text);
-            MayaMaya.Afrekenen(betaalWijze, fooi, tafelId);
+            MayaMaya.Afrekenen(tafelId);
             this.Hide();
             Tafelscherm scherm = new Tafelscherm();
             scherm.Show();

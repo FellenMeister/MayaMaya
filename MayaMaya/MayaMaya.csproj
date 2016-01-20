@@ -80,7 +80,6 @@
     <Compile Include="Bestellingscherm.Designer.cs">
       <DependentUpon>Bestellingscherm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gereed.cs" />
     <Compile Include="Gereedscherm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -8,7 +8,8 @@ namespace MayaMaya
 {
     class Medewerker
     {
-        int id, wachtwoord;
+        public int id;
+        int wachtwoord;
         string naam, functie;
         bool ingelogd;
 
